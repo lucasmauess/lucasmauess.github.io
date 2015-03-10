@@ -1,8 +1,8 @@
-# [lucasmauess.github.io](http://lucasmauess.github.io/)
+# [Lucas Mauess](http://lucasmauess.github.io/)
 
-Hello community GitHub! I'm learning to use Git and this is a test repository, where host a personal page, with links to my social networks.
+Hello, I´m Lucas Mauess. A brazilian and a front-end web developer that creates sites and apps. Welcome to My personal page.
 
-- Lucas Mauess
+@LucasMauess
 
 lucasmauess.github.io
 =====================
