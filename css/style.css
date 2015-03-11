@@ -259,7 +259,7 @@ header li a {
   font-weight: lighter;
   text-decoration: none;
 }
-header li a:hover, header li a:focus, header li a:active {
+header li a:hover, header li a:focus {
   color: #fff;
   background-color: #555;
 }
@@ -268,6 +268,9 @@ input#control-nav {
   position: absolute;
   left: -9999px;
   opacity: 0;
+}
+.active-page {
+  color: #fff;
 }
 
 
