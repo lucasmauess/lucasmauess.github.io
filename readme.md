@@ -8,8 +8,6 @@ This repository is named as "lucasmauess.gihub.io" because it follows a naming s
 
 The objective of this repository is to gather information about me in a single web page, such as links to my profiles on social networks, information to contact, a blog to share ideas about programming and development (coming soon) and mainly promote my projects and my contributions in the open source community. Do not need to explain why I chose GitHub for it =D
 
-See: [lucasmauess.github.io](http://lucasmauess.github.io/)
-
 ## browser support
 
 ![Chrome](img/_Chrome.png?raw=true) | ![Internet Explorer](img/_ie.png?raw=true) | ![Firefox](img/_Firefox.png?raw=true) | ![Safari](img/_Safari.png?raw=true) | ![Opera](img/_Opera.png?raw=true) | ![UC Browser](img/_uc.png?raw=true) | ![Spartan](img/_Spartan.png?raw=true)
