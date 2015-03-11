@@ -259,7 +259,7 @@ header li a {
   font-weight: lighter;
   text-decoration: none;
 }
-header li a:hover, header li a:focus {
+header li a:hover, header li a:focus, header li a:active {
   color: #fff;
   background-color: #555;
 }
