@@ -163,8 +163,8 @@ MEDIA QUERIES
     right: 20px;
     top: 20px;
     display: block;
-    width: 24px;
-    padding: 6px 0;
+    width: 26px;
+    padding: 7px 0;
     border: solid #fff;
     border-width: 2px 0;
     z-index: 2; 
@@ -271,7 +271,6 @@ input#control-nav {
 }
 .active-page {
   color: #fff;
-  text-transform: uppercase;
 }
 
 /*
