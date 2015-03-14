@@ -28,3 +28,7 @@ Very simple! All information to you need, can be found in these links:
 ## Credits
 
 Code and Design by Lucas Mauess.
+
+## License
+
+Copyright © 2015 Lucas Mauess. [MIT License](http://mit-license.org/)
