@@ -8,7 +8,7 @@ The objective of this repository is to gather information about me in a single w
 
 ## Browser support
 
-![Chrome](images/_Chrome.png?raw=true) | ![Internet Explorer](images/_ie.png?raw=true) | ![Firefox](images/_Firefox.png?raw=true) | ![Safari](images/_Safari.png?raw=true) | ![Opera](images/_Opera.png?raw=true) | ![UC Browser](images/_uc.png?raw=true) | ![Spartan](images/_Spartan.png?raw=true)
+![Chrome](images/_chrome.png?raw=true) | ![Internet Explorer](images/_ie.png?raw=true) | ![Firefox](images/_firefox.png?raw=true) | ![Safari](images/_safari.png?raw=true) | ![Opera](images/_opera.png?raw=true) | ![UC Browser](images/_uc.png?raw=true) | ![Spartan](images/_spartan.png?raw=true)
  --- | --- | --- | --- | --- | --- | --- |		 --- | --- | --- | --- | --- | --- | --- |
  Chrome (26+) | IE (10+) | Firefox (16+) | Safari (6+) | Opera (12+) | UC (Latest)| Spartan (Latest) |
 
