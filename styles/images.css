@@ -26,7 +26,7 @@ SOCIAL ICONS
 .grooveshark-icon { background-image: url('../images/icons/grooveshark.png'); }
 .grooveshark-color:hover { background-color: #FF8300; }
 .vine-icon { background-image: url('../images/icons/vine.png'); }
-.vine-color:hover { background: #00bf8f; }
+.vine-color:hover { background-color: #00bf8f; }
 .instagram-icon { background-image: url('../images/icons/instagram.png'); }
 .instagram-color:hover { background-color: #1c5380; }
 .flickr-icon { background-image: url('../images/icons/flickr.png'); }
@@ -35,7 +35,7 @@ SOCIAL ICONS
 .skype-color:hover { background-color: #00aff0; }
 .spotify-icon { background-image: url('../images/icons/spotify.png'); }
 .spotify-color:hover { background-color: #4da400; }
-.soundcloud-icon { background-image: url('../images/icons/soundcloud.png'); }
+.soundcloud-icon { background-image: url('../images/icons/soundcloud_.png'); }
 .soundcloud-color:hover { background-color: #FF5500; }
 .pinterest-icon { background-image: url('../images/icons/pinterest.png'); }
 .pinterest-color:hover { background-color: #cb2027; }
@@ -58,11 +58,19 @@ SOCIAL ICONS
 .twitch-icon { background-image: url('../images/icons/twitch.png'); }
 .twitch-color:hover { background-color: #6441A5; }
 .vimeo-icon { background-image: url('../images/icons/vimeo.png'); }
-.vimeo-color:hover { }
+.vimeo-color:hover { background-color: #4bf; }
 .slideshare-icon { background-image: url('../images/icons/slideshare.png'); }
-.slideshare-color:hover { }
+.slideshare-color:hover { background-color: #008ED2; }
 .aboutme-icon { background-image: url('../images/icons/aboutme.png'); }
-.aboutme-color:hover { }
+.aboutme-color:hover { background-color: #007BB6; }
+.stumbleupon-icon { background-image: url('../images/icons/stumbleupon.png'); }
+.stumbleupon-color:hover { background-color: #EB4924; }
+.disqus-icon { background-image: url('../images/icons/disqus.png'); }
+.disqus-color:hover { background-color: #2e9fff; }
+.myspace-icon { background-image: url('../images/icons/myspace.png'); }
+.myspace-color:hover { background-color: #333; }
+.reddit-icon { background-image: url('../images/icons/reddit.png'); }
+.reddit-color:hover { background-color: #0079d3; }
 
 /*
 PROJECTS - ICONS
