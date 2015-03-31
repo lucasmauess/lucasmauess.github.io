@@ -1,48 +1,60 @@
 <!DOCTYPE html>
-<!--
-"The knowledge is only valid if it is shared with the people, otherwise, the knowledge does not evolve in a transparent manner or can die with whom hid" - Lucas Mauess
-
-00110001 00100000 01110000 01101111 01101001 01101110 01110100 00100000 01100110 01101111 01110010 00100000 01101100 01110101 01100011 01100001 01110011 00100000 01101101 01100001 01110101 01100101 01110011 01110011 00100000 01100001 01101110 01100100 00100000 00110010 00100000 01100110 01101111 01110010 00100000 01111001 01101111 01110101 01110010 00100000 01100011 01110101 01110010 01101001 01101111 01110011 01101001 01110100 01111001 00100000 00111101 01000100
--->
+<!-- Code and Design by Lucas Mauess -->
 <html lang="en">
 
 	<head>
-		<title>Lucas Mauess</title>
 		<!-- Compatibility -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Optimization -->
+		<!-- SEO -->
+		<title>Lucas Mauess</title>
 	    <meta name="description" content="Welcome to personal page of Lucas Mauess. A Computer Science student at UFPA and Web Developer that creates Sites and Apps.">
-	    <meta name="keywords" content="lucas, mauess, maues">
+	    <meta name="keywords" content="lucas, mauess, maues, site">
 	    <meta name="author" content="Lucas Mauess">
 	    <!-- CSS -->
 	    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 	    <link rel="stylesheet" href="styles/images.css" type="text/css"/>
 	    <!-- Favicon -->
-	    <link rel="icon" href="images/favicon.png">
-	    <!-- Add to Homescreen for Chrome on Android -->
+	    <link rel="shortcut icon" href="images/favicon.png"/>
+	    <!-- "Add to Homescreen" + "Theme Color" for Chrome on Android -->
 	    <meta name="mobile-web-app-capable" content="yes">
 	    <link rel="icon" sizes="192x192" href="images/chrome-touch-icon.png">
-	    <!-- Add to Homescreen for Safari on iOS -->
+	    <meta name="theme-color" content="#555555">
+	    <!-- "Add to Homescreen" for Safari on iOS -->
 	    <meta name="apple-mobile-web-app-capable" content="yes">
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	    <meta name="apple-mobile-web-app-title" content="Lucas Mauess">
 	    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-	    <!-- Add to Start screen for IE on Windows -->
+	    <!-- "Add to Start screen" for IE on Windows -->
 	    <meta name="msapplication-TileImage" content="images/ms-touch-icon.png"/>
 		<meta name="msapplication-TileColor" content="#FFFFFF"/>
-	    <!-- Google+ -->
-	    <link rel="publisher" href="https://plus.google.com/u/0/+LucasMauess">
+	    <!-- Google+ / Schema.org -->
+	    <link rel="publisher" href="https://plus.google.com/+LucasMauess"/>
+	    <meta itemprop="name" content="Lucas Mauess - Desenvolvedor Web"/>
+    	<meta itemprop="description" content="Um blog de um desenvolvedor web e entusiasta de novas tecnologias. Compartilhando projetos e ideias.">
+    	<meta itemprop="image" content="images/lucasmauess.png"/>
 	    <!-- Facebook / Open Graph -->
+	    <meta property="fb:admins" content="100001682681282" />
+	    <meta property="og:locale" content="pt_BR">
+    	<meta property="og:url" content="http://lucasmauess.github.io/">
+    	<meta property="og:type" content="website">
+    	<meta property="og:title" content="Lucas Mauess - Desenvolvedor Web">
+    	<meta property="og:image" content="images/lucasmauess.png">
+    	<meta property="og:description" content="Um blog de um desenvolvedor web e entusiasta de novas tecnologias. Compartilhando projetos e ideias.">
+    	<meta property="og:site_name" content="Lucas Mauess">
 	    <!-- Twitter Cards -->
+	    <meta name="twitter:card" content="summary_large_image">
+    	<meta name="twitter:site" content="@lucasmauess">
+    	<meta name="twitter:title" content="Lucas Mauess - Desenvolvedor Web">
+    	<meta name="twitter:description" content="Um blog de um desenvolvedor web e entusiasta de novas tecnologias. Compartilhando projetos e ideias.">
+    	<meta property="twitter:image:src" content="images/lucasmauess.png">
 	</head>
     
 	<body>
 
 	    <header>
-	    
-	        <figure id="logo"></figure>
+	        <figure id="photo-logo"></figure>
 	        <h1><a href="index.html"><span>LUCAS</span> MAUESS</a></h1>
 
 	        <input type="checkbox" id="control-nav"/>
@@ -57,16 +69,23 @@
 	                <li><a href="contact.html">Contact</a></li>
 	            </ul>
 	        </nav>
-
 	    </header>
 
-	    <section id="about" class="bg-white">
+	    <section>
 
-	    	<h2>Hi, I´m <span>Lucas Mauess</span>, Brazilian, computer science student and web developer that creates sites and apps.</h2>
+	    	<div class="content-home">
+
+	    	<p>Hi, I'm <em>Lucas Mauess</em>, a Brazilian front end web developer. I like programming and open source projects, especially, that help to share knowledge with community.</p>
+	    
+	    	<p>Also I am student of Computer Science at UFPA. Want to know more about me? Then you are in the right place :)</p>
+
+	    	</div>
 	    
 	    </section>
 
-	    <section id="contact" class="bg-white">
+	    <section class="bg-gray">
+
+	    		<div class="content-box-home">
 
 				<a href="http://twitter.com/lucasmauess" class="box twitter-color" target="_blank">
 					<figure class="twitter-icon"></figure>
@@ -84,10 +103,11 @@
 					<figure class="github-icon"></figure>
 					<h2>GitHub</h2>
 				</a>
-				<a href="http://instagram.com/lucasmauess" class="box instagram-color" target="_blank">
-					<figure class="instagram-icon"></figure>
-					<h2>Instagram</h2>
+				<a href="http://linkedin.com/in/lucasmauess" class="box linkedin-color" target="_blank">
+					<figure class="linkedin-icon"></figure>
+					<h2>LinkedIn</h2>
 				</a>
+
 				<a href="skype://lucasmauess" class="box skype-color">
 					<figure class="skype-icon"></figure>
 					<h2>Skype</h2>
@@ -96,9 +116,9 @@
 					<figure class="foursquare-icon"></figure>
 					<h2>Foursquare</h2>
 				</a>
-				<a href="http://linkedin.com/pub/lucas-mau%C3%A9s/" class="box linkedin-color" target="_blank">
-					<figure class="linkedin-icon"></figure>
-					<h2>LinkedIn</h2>
+				<a href="http://instagram.com/lucasmauess" class="box instagram-color" target="_blank">
+					<figure class="instagram-icon"></figure>
+					<h2>Instagram</h2>
 				</a>
 					<a href="http://www.behance.net/lucasmauess" class="box behance-color" target="_blank">
 					<figure class="behance-icon"></figure>
@@ -184,11 +204,15 @@
 					<figure class="rdio-icon"></figure>
 					<h2>Rdio</h2>
 				</a>
+
+				</div>
 	    	
 	    </section>
 
-	    <footer class="bg-white">
-	        <h6>Lucas Mauess © 2015 <p> <a href="http://mit-license.org/" target="_blank">MIT Licence</a> — <a href="http://pages.github.com/" target="_blank">GitHub Pages</a></p></h6>
+	    <footer>
+
+	        <h6>© 2015 Lucas Mauess <p> <a href="http://mit-license.org/" target="_blank">MIT Licence</a> — <a href="http://pages.github.com/" target="_blank">GitHub Pages</a></p></h6>
+
 	    </footer>
 
 	    <!-- Google Analytics -->
