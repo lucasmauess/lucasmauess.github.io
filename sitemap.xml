@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
 	<loc>http://lucasmauess.github.io/</loc>
-	<lastmod>2015-03-14T21:21:31+00:00</lastmod>
+	<lastmod>2015-03-31T01:01:00+00:00</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>1.00</priority>
 </url>
@@ -22,6 +22,5 @@
 	<loc>http://lucasmauess.github.io/contact.html</loc>
 	<changefreq>weekly</changefreq>
 </url>
-
 </urlset>
  
