@@ -104,12 +104,14 @@ PROJECTS
 BUTTONS
 */
 
-.button-icon-search {background-image: url('../images/search.png'); }
-.button-icon-share {background-image: url('../images/share.png'); }
-.button-icon-tags {background-image: url('../images/tags.png'); }
-.button-icon-rss {background-image: url('../images/rss.png'); }
-.button-icon-add {background-image: url('../images/add.png'); }
-.button-icon-mail {background-image: url('../images/mail.png'); }
-.button-icon-phone {background-image: url('../images/phone.png'); }
-.button-icon-profile {background-image: url('../images/profile.png'); }
-.button-icon-feedback {background-image: url('../images/feedback.png'); }
+.button-icon-search {background-image: url('../images/search.svg'); }
+.button-icon-share {background-image: url('../images/share.svg'); }
+.button-icon-tags {background-image: url('../images/tags.svg'); }
+.button-icon-rss {background-image: url('../images/rss.svg'); }
+.button-icon-add {background-image: url('../images/add.svg'); }
+.button-icon-mail {background-image: url('../images/mail.svg'); }
+.button-icon-phone {background-image: url('../images/phone.svg'); }
+.button-icon-profile {background-image: url('../images/profile.svg'); }
+.button-icon-feedback {background-image: url('../images/feedback.svg'); }
+
+svg:hover #svgsearch { fill: red !important; }

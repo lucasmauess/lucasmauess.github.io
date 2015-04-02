@@ -2,7 +2,6 @@
 FONTS
 */
 
-
 @font-face { 
   font-family: 'Roboto-Light'; 
   src: url('../fonts/Roboto-Light.ttf') format("opentype");
@@ -90,7 +89,7 @@ MEDIA QUERIES
   a.box-post { width: 17.2%; }
   a.box-pro { width: 17.2%; }
   .active-page-title { font-size: 86px; }
-  .content-box-home { padding: 60px; }
+  .container-box { padding: 60px; }
 }
 
 @media all and (max-width: 1999px) {
@@ -137,7 +136,7 @@ MEDIA QUERIES
     height: 132px; 
     width: 132px; 
   }
-  .content-box-home { padding: 40px; }
+  .container-box { padding: 40px; }
   .active-page-title { font-size: 56px; }
 }
 
@@ -173,7 +172,7 @@ MEDIA QUERIES
   #photo-logo { 
     display: none; 
   }
-  .content-box-home { padding: 15px 0; }
+  .container-box { padding: 15px 0; }
   .active-page-title { font-size: 36px; }
 
   /* 
@@ -478,10 +477,22 @@ h2 span {
   font-size: 16px;
   color: #ccc;
 }
-/*
-BACKGROUNDS
-*/
-
+.toolbar {
+  position: relative;
+  float: left;
+  height: auto; 
+  width: 96%;
+  padding: 0 2% 2% 2%;
+  background-color: #fff;
+  text-align: center;
+}
+.container-1 {
+  max-width: 900px;
+  margin: 20px auto;
+}
+.container-box {
+  margin: 0 auto;
+}
 .bg-gray {
   background-color: #eee;
 }
@@ -498,22 +509,7 @@ BACKGROUNDS
   padding: 20px 0;
 }
 
-.toolbar {
-  position: relative;
-  float: left;
-  height: auto; 
-  width: 96%;
-  padding: 0 2% 2% 2%;
-  background-color: #fff;
-  text-align: center;
-}
-.content-home {
-  max-width: 1000px;
-  margin: 20px auto;
-}
-.content-box-home {
-  margin: 0 auto;
-}
+
 
 /*
 SPINNER ANIMATION
@@ -702,6 +698,10 @@ a.button figure {
   background-size: 18px;
   background-repeat: no-repeat; 
   background-position: center;
+  background-color: transparent;
+}
+svg:hover #svgsearch { 
+  fill: yellow;
 }
 
 /*
