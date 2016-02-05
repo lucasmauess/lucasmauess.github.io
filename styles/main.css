@@ -472,7 +472,7 @@ article blockquote {
 /* Chapter */
 
 .chapter h3 {
-  font: 700 32px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  font: 700 36px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
   line-height: 1.4em;
   text-align: center;
   max-width: 740px;
@@ -481,13 +481,13 @@ article blockquote {
   text-rendering: optimizeLegibility;
 }
 .chapter p {
-  font: 300 20px/1.2em 'Roboto-Light', Arial, sans-serif;
+  font: 300 22px/1.2em 'Roboto-Light', Arial, sans-serif;
   line-height: 1.8;
   letter-spacing: 0.18px;
   text-align: center;
   max-width: 740px;
   margin: 0 auto;
-  padding: 12px 2%;
+  padding: 12px 20px;
 }
 .chapter img {
   max-width: 80%;
@@ -834,19 +834,24 @@ article blockquote {
   margin: 24px;
   padding: 0 0 20px;
   background-color: #fff;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 .box-post:hover, .box-post:focus {
   background-color: #fff;
-  opacity: 0.88; 
+  opacity: 0.9; 
   /* box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); */
 }
 .box-post h2 {
   float: left;
   text-align: left;
   width: auto;
-  padding: 24px 0;
+  padding: 24px 0 18px;
   margin: 0 auto;
-  color: #444;
+  color: #25AFCC;
   font: 700 28px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
   line-height: normal;
 }
@@ -879,22 +884,20 @@ article blockquote {
   filter: grayscale(100%);
 }
 .box-post span {
-  display: none;
   position: absolute;
   width: auto;
-  top: 0px;
-  border: 1px solid transparent;
+  top: 0;
+  left: 0;
   text-transform: uppercase;
-  padding: 5px 8px 4px;
-  margin: 10px 10px;
-  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px 12px 6px;
+  margin: 0;
+  background-color: #25AFCC;
   font: 400 12px 'Roboto-light';
   letter-spacing: 1px;
   color: #fff;
 }
 .box-post span:hover, .box-post span:focus { 
-  background-color: #000;
-  border-color: #fff;
+  background-color: #444;
 }
 
 /* Tiles */
@@ -1165,10 +1168,10 @@ article blockquote {
 .box-home h4 {
   text-align: center;
   padding: 0;
-  font: 700 34px 'Nova-Bold', Arial, sans-serif;
+  font: 700 32px 'Nova-Bold', Arial, sans-serif;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
 }
 .box-home span {
   display: inline-block;
@@ -1188,7 +1191,7 @@ article blockquote {
   margin: 0 40%;
   top: -12px;
   background-color: #fff;
-  }
+}
 
 
 /* Contact Form */
@@ -1354,7 +1357,7 @@ input[type="submit"]:active {
     text-align: left;
     width: 64%;
     height: auto;
-    padding: 20px 18% 18px;
+    padding: 18px 18% 16px;
     line-height: normal;
     font-size: 1.1em;
     color: rgba(255, 255, 255, 0.6);
@@ -1509,7 +1512,6 @@ input[type="submit"]:active {
     width: 96%;
     padding: 64px 2%;
   }
-
   .page h2 {
     padding: 20px 0 0 0;
     font-size: 42px;
@@ -1521,10 +1523,9 @@ input[type="submit"]:active {
     color: #fff;
     height: 120px;
   }
-
   .box {
-    background-size: 42px;
-    background-position: 50%;
+    background-size: 48px;
+    background-position: center;
     height: 86px;
     width: 86px;
     margin: 0;
@@ -1558,10 +1559,10 @@ input[type="submit"]:active {
     width: 99%;
   }
   .chapter h3 {
-    font-size: 26px;
+    font-size: 28px;
   }
   .home {
-    padding: 20px 32px 0;
+    padding: 20px;
   }
   .down {
     bottom: 0;
