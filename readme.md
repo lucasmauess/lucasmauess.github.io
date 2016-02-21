@@ -10,7 +10,7 @@ The objective of this repository is to gather information about me in a single w
 
 ![Google Chrome](images/_chrome.png?raw=true) | ![Internet Explorer](images/_ie.png?raw=true) | ![Mozilla Firefox](images/_firefox.png?raw=true) | ![Apple Safari](images/_safari.png?raw=true) | ![Opera](images/_opera.png?raw=true) | ![Microsoft Edge](images/_edge.png?raw=true) | ![UC Browser](images/_uc.png?raw=true)  
  --- | --- | --- | --- | --- | --- | --- |		 --- | --- | --- | --- | --- | --- | --- |
- Chrome (26+) | IE (9+) | Firefox (16+) | Safari (5+) | Opera (12+) | UC (Latest)| Edge (Latest) |
+ Chrome (26+) | IE (9+) | Firefox (16+) | Safari (5+) | Opera (12+) | Edge (25+)| UC (Latest) |
 
 ## Licenses
 
