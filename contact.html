@@ -14,7 +14,7 @@
   	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
   	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
-	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="images/icons/favicon.png">
 
 	<script src="scripts/headroom.js"></script>
 </head>
@@ -23,217 +23,235 @@
 
     <header role="banner" id="header">
 
-        <a href="index.html">
-            <h1>Lucas Mauess</h1>
-        </a>
+        <a href="index.html" id="logo">Lucas Mauess</a>
 
-        <button id="menu-button"></button>
-        <div class="layer-menu"></div>
+        <button id="menu-button" onclick="openMenu();"></button>
+
+        <div class="layer-menu" onclick="closeMenu();">
+        	<button id="close-button" onclick="closeMenu();"></button>
+        </div>
 
         <nav role="navigation">
-            <button id="close-button"></button>
             <ul>
-                <li><a href="index.html" accesskey="h">Home</a></li>
-                <li><a href="blog.html" accesskey="b">Blog</a></li>
-                <li><a href="projects.html" accesskey="p">Projects</a></li>
-                <li><a href="services.html" accesskey="s">Services</a></li>
-                <li><a href="work.html" accesskey="w">Work</a></li>
-                <li><a href="contact.html" accesskey="c" class="active">Contact</a></li>
-                <li><a href="about.html" accesskey="a">About</a></li>
+			    <li><a href="index.html">Home</a></li>
+			    <li><a href="about.html">About</a></li>
+ 	            <li><a href="services.html">Services</a></li>
+ 	            <li><a href="projects.html">Projects</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" id="active">Contact</a></li>
             </ul>
         </nav>
         
     </header>
 
-    <section class="full-screen page-bg img-contact">
 
-        <div class="full-screen-container page">
+    <section class="full-screen img-contact">
 
-	    	<h2>Contact</h2>
-	    	<p>Let’s talk!</p>
-	    	
-	    	<div class="page-bar">
+        <div class="full-screen-container layer page">
 
-	    		<a href="#message">
-		    		<figure class="icon-mail"></figure>
-		    		<span>Message</span>
-		    	</a>
+	    	<h1>Contact</h1>
+	    	<p>Let's work together!</p>
 
-	    		<a href="#profiles">
-	    			<figure class="icon-profile"></figure>
-	    			<span>Profiles</span>
+	    	<div class="bar">
+
+	    		<a href="mailto:lucasmauess@gmail.com">
+	    			<figure class="icon-email"></figure>
+	    			<span>lucasmauess<br>@gmail.com</span>
 	    		</a>
 
-		    	<a href="#call">
+		    	<a href="tel:+55(91)984968007">
 		    		<figure class="icon-phone"></figure>
-		    		<span>Call</span>
+		    		<span>+55 (91) <br>984 968 007</span>
 		    	</a>
 
+	    		<a href="#message">
+		    		<figure class="icon-message"></figure>
+		    		<span>Send a<br> Message</span>
+		    	</a>
+
+		    	<a href="#social">
+	    			<figure class="icon-profile"></figure>
+	    			<span>Social<br> Media</span>
+	    		</a>
+
 		    </div>
+
+		    <a href="#message" class="down"></a>
 
 		</div>
 
 	</section>
 
-	<main role="main">
 
-		<section id="message" class="chapter">
-		
-			<h3>Send a Message</h3>
-			<p>Directly to me. I'll answer to you as soon as possible.</p>
+	<section id="message" class="full-screen">
+
+		<div class="full-screen-container">
+	
+			<h3>Let's Talk</h3>
+			<p>Take a sec to let me know a bit about your project, idea or proposal. We can build something awesome together!</p>
 
 			<!-- Formspree -->
 		    <form role="form" action="//formspree.io/lucasmauess@gmail.com" method="POST">
-		        <input type="text" name="name" placeholder="Name" required/>
-		        <input type="email" name="_replyto" placeholder="Email" required/>
+		        <input type="text" name="name" placeholder="Name *" required/>
+		        <input type="email" name="_replyto" placeholder="Email *" required/>
 		        <input type="tel" name="phone" placeholder="Phone" pattern="[0-9]+$" title="Only numbers"/>
 		        <input type="url" name="website" placeholder="Website"/>
-		        <!-- <input type="hidden" name="_subject" value="Contact [lucasmauess.github.io]"/> -->
-		        <input type="text" name="subject" id="subject" placeholder="Subject" required/>
-		        <textarea name="text" placeholder="Message" required></textarea>
+		        <input type="hidden" name="_subject" value="Contact [lucasmauess.com]"/>
+		        <!-- <input type="text" name="subject" id="subject" placeholder="Subject *" required/> -->
+		        <textarea name="text" placeholder="Message *" required></textarea>
 		        <input type="submit" value="Send"/>
 		        <input type="hidden" name="_next" value="thanks.html" />
 		        <input type="text" name="_gotcha" style="display:none"/>
 		    </form>
 
-    	</section>
+	    </div>
 
-	<section id="profiles" class="chapter">
+	</section>
 
-		<h3>Social Networks</h3>
-    	<p>The best way to stay connected and share any content with me.</p>
 
-		<div class="container-box">
-				
-			<a href="http://twitter.com/lucasmauess" class="box twitter" target="_blank">
-				<span>Twitter</span>
-			</a>
-			<a href="http://facebook.com/lucasmauess" class="box facebook" target="_blank">
-				<span>Facebook</span>
-			</a>
-			<a href="http://google.com/+lucasmauess" class="box googleplus" target="_blank">
-				<span>Google+</span>
-			</a>
-			<a href="#" class="box whatsapp" target="_blank">
-				<span>WhatsApp</span>
-			</a>
-			<a href="skype://lucasmauess" class="box skype">
-				<span>Skype</span>
-			</a>
-			<a href="http://instagram.com/lucasmauess" class="box instagram" target="_blank">
-				<span>Instagram</span>
-			</a>
-			<a href="https://www.snapchat.com/add/lucasmauess" class="box snapchat" target="_blank">
-				<span>Snapchat</span>
-			</a>
-			<a href="http://youtube.com/lucasmauess" class="box youtube" target="_blank">
-				<span>YouTube</span>
-			</a>
-			<a href="http://pinterest.com/lucasmauess" class="box pinterest" target="_blank">
-				<span>Pinterest</span>
-			</a>
-			<a href="http://linkedin.com/in/lucasmauess" class="box linkedin" target="_blank">
-				<span>LinkedIn</span>
-			</a>
-			<a href="http://foursquare.com/user/82595040" class="box foursquare" target="_blank">
-				<span>Foursquare</span>
-			</a>
-			<a href="http://vine.co/lucasm" class="box vine" target="_blank">
-				<span>Vine</span>
-			</a>
-			<a href="http://play.spotify.com/user/lucasmauess" class="box spotify" target="_blank">
-				<span>Spotify</span>
-			</a>
-			<a href="http://soundcloud.com/lucasmauess" class="box soundcloud" target="_blank">
-				<span>SoundCloud</span>
-			</a>
-			<a href="http://live.xbox.com/profile?gamertag=lucasmauess" class="box xbox" target="_blank">
-				<span>Xbox Live</span>
-			</a>
-			<a href="https://www.periscope.tv/lucasmauess" class="box periscope" target="_blank">
-				<span>Periscope</span>
-			</a>
-			<a href="http://lucasmauess.deviantart.com/" class="box deviantart" target="_blank">
-				<span>DeviantArt</span>
-			</a>
-			<a href="http://flickr.com/lucasmauess" class="box flickr" target="_blank">
-				<span>Flickr</span>
-			</a>
-			<a href="http://slideshare.net/lucasmauess" class="box slideshare" target="_blank">
-				<span>SlideShare</span>
-			</a>
-			<a href="http://vimeo.com/lucasm" class="box vimeo" target="_blank">
-				<span>Vimeo</span>
-			</a>
-			<a href="http://www.twitch.tv/lucasmauess/profile" class="box twitch" target="_blank">
-				<span>Twitch</span>
-			</a>
-			<a href="http://lucasmauess.tumblr.com/" class="box tumblr" target="_blank">
-				<span>Tumblr</span>
-			</a>
-			<a href="http://myspace.com/lucasmauess" class="box myspace" target="_blank">
-				<span>Myspace</span>
-			</a>
-			<a href="http://www.stumbleupon.com/stumbler/lucasmauess" class="box stumbleupon" target="_blank">
-				<span>StumbleUpon</span>
-			</a>
-			<a href="http://reddit.com/user/lucasmauess" class="box reddit" target="_blank">
-				<span>reddit</span>
-			</a>
-			<a href="http://flipboard.com/@lucasmauess" class="box flipboard" target="_blank">
-				<span>Flipboard</span>
-			</a>
-			<a href="https://github.com/lucasmauess" class="box github" target="_blank">
-				<span>GitHub</span>
-			</a>
-			<a href="https://behance.net/lucasmauess" class="box behance" target="_blank">
-				<span>Behance</span>
-			</a>
-			<a href="http://dribbble.com/lucasm" class="box dribbble" target="_blank">
-				<span>Dribbble</span>
-			</a>
-			<a href="http://codepen.io/lucasm" class="box codepen" target="_blank">
-				<span>CodePen</span>
-			</a>
-			<a href="http://ello.co/mauess" class="box ello" target="_blank">
-				<span>Ello</span>
-			</a>
-			<a href="https://medium.com/@mauess" class="box medium" target="_blank">
-				<span>Medium</span>
-			</a>
-			<a href="http://disqus.com/lucasmauess" class="box disqus" target="_blank">
-				<span>Disqus</span>
-			</a>
-			<a href="http://about.me/lucasm" class="box aboutme" target="_blank">
-				<span>about.me</span>
-			</a>
-			<a href="http://lattes.cnpq.br/2171245568210053" class="box lattes" target="_blank">
-				<span>Lattes</span>
-			</a>
+	<section id="social" class="full-screen">
+
+		<div class="full-screen-container layer">
+
+		<h3>Stay Connected</h3>
+
+			<div class="container-box">
+
+				<a href="https://facebook.com/lucasmauess" class="box facebook" target="_blank">
+					<span>Facebook</span>
+				</a>
+				<a href="https://twitter.com/lucasmauess" class="box twitter" target="_blank">
+					<span>Twitter</span>
+				</a>
+				<a href="skype://lucasmauess" class="box skype">
+					<span>Skype</span>
+				</a>
+				<a href="https://telegram.me/lucasmauess" class="box telegram" target="_blank">
+					<span>Telegram</span>
+				</a>
+				<a href="https://linkedin.com/in/lucasmauess" class="box linkedin" target="_blank">
+					<span>LinkedIn</span>
+				</a>
+				<a href="https://google.com/+lucasmauess" class="box googleplus" target="_blank">
+					<span>Google+</span>
+				</a>
+				<a href="http://instagram.com/lucasmauess" class="box instagram" target="_blank">
+					<span>Instagram</span>
+				</a>
+				<a href="http://snapchat.com/add/lucasmauess" class="box snapchat" target="_blank">
+					<span>Snapchat</span>
+				</a>
+				<a href="https://medium.com/@mauess" class="box medium" target="_blank">
+					<span>Medium</span>
+				</a>
+				<a href="https://github.com/lucasmauess" class="box github" target="_blank">
+					<span>GitHub</span>
+				</a>
+				<a href="http://dribbble.com/lucasm" class="box dribbble" target="_blank">
+					<span>Dribbble</span>
+				</a>
+				<a href="https://behance.net/lucasmauess" class="box behance" target="_blank">
+					<span>Behance</span>
+				</a>
+				<a href="http://codepen.io/lucasm" class="box codepen" target="_blank">
+					<span>CodePen</span>
+				</a>
+				<a href="http://vine.co/lucasm" class="box vine" target="_blank">
+					<span>Vine</span>
+				</a>
+				<a href="http://open.spotify.com/user/lucasmauess" class="box spotify" target="_blank">
+					<span>Spotify</span>
+				</a>
+				<a href="http://last.fm/user/lucasmauess" class="box lastfm" target="_blank">
+					<span>Last.fm</span>
+				</a>
+				<a href="http://soundcloud.com/lucasmauess" class="box soundcloud" target="_blank">
+					<span>SoundCloud</span>
+				</a>
+				<a href="http://youtube.com/lucasmauess" class="box youtube" target="_blank">
+					<span>YouTube</span>
+				</a>
+				<a href="http://periscope.tv/lucasmauess" class="box periscope" target="_blank">
+					<span>Periscope</span>
+				</a>
+				<a href="http://pinterest.com/lucasmauess" class="box pinterest" target="_blank">
+					<span>Pinterest</span>
+				</a>
+				<a href="http://slideshare.net/lucasmauess" class="box slideshare" target="_blank">
+					<span>SlideShare</span>
+				</a>
+				<a href="http://flickr.com/lucasmauess" class="box flickr" target="_blank">
+					<span>Flickr</span>
+				</a>
+				<a href="http://reddit.com/user/lucasmauess" class="box reddit" target="_blank">
+					<span>reddit</span>
+				</a>
+				<a href="http://vimeo.com/lucasm" class="box vimeo" target="_blank">
+					<span>Vimeo</span>
+				</a>
+				<a href="http://twitch.tv/lucasmauess/profile" class="box twitch" target="_blank">
+					<span>Twitch</span>
+				</a>
+				<a href="http://flipboard.com/@lucasmauess" class="box flipboard" target="_blank">
+					<span>Flipboard</span>
+				</a>
+				<a href="http://foursquare.com/user/82595040" class="box foursquare" target="_blank">
+					<span>Foursquare</span>
+				</a>
+				<a href="http://lucasmauess.deviantart.com/" class="box deviantart" target="_blank">
+					<span>DeviantArt</span>
+				</a>
+				<a href="http://ello.co/mauess" class="box ello" target="_blank">
+					<span>Ello</span>
+				</a>
+				<a href="http://stumbleupon.com/stumbler/lucasmauess" class="box stumbleupon" target="_blank">
+					<span>StumbleUpon</span>
+				</a>
+				<a href="http://myspace.com/lucasmauess" class="box myspace" target="_blank">
+					<span>Myspace</span>
+				</a>
+				<a href="http://live.xbox.com/profile?gamertag=lucasmauess" class="box xbox" target="_blank">
+					<span>Xbox Live</span>
+				</a>
+				<!-- <a href="http://lucasmauess.tumblr.com/" class="box tumblr" target="_blank">
+					<span>Tumblr</span>
+				</a> -->
+				<!-- <a href="http://disqus.com/lucasmauess" class="box disqus" target="_blank">
+					<span>Disqus</span>
+				</a> -->
+				<!-- <a href="http://lattes.cnpq.br/2171245568210053" class="box lattes" target="_blank">
+					<span>Lattes</span>
+				</a> -->
+				<!-- <a href="http://about.me/lucasm" class="box aboutme" target="_blank">
+					<span>about.me</span>
+				</a> -->
+
+			</div>
 
 		</div>
 
 	</section>
-
-		<section id="call" class="chapter">
-
-	    	<h3>Call Me</h3>
-	    	<p>If you prefer to make a call, here's my phone number:</p>
-
-	    	<a href="tel:+55(91)980736060" class="button">+55 (91) 980 736 060</a>
-
-    	</section>
-
-    </main>
-
-    	<footer>
-    		<p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
-    	</footer>
+	
+    <footer>
+    	<ul>
+            <li><a href="index.html" accesskey="h">Home</a></li>
+            <li><a href="about.html" accesskey="a">About</a></li>
+            <li><a href="services.html" accesskey="s">Services</a></li>
+            <li><a href="projects.html" accesskey="p">Projects</a></li>
+            <li><a href="work.html" accesskey="w">Work</a></li>
+            <li><a href="blog.html" accesskey="b">Blog</a></li>
+            <li><a href="contact.html" accesskey="c">Contact</a></li>
+            <li><a href="licenses.html" accesskey="l">Licenses</a></li>
+	    </ul>
+	    <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
+    </footer>
     	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/header.js"></script>
+<script src="scripts/pace.js"></script>
 
 <!-- Google Analytics -->
 <script>

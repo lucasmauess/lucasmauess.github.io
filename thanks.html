@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
@@ -11,45 +10,45 @@
     <meta http-equiv="refresh" content="24; url=index.html"/>
 
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/header.css" type="text/css"/>
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/icons/favicon.png">
 </head>
     
 <body>
 
     <header role="banner">
 
-        <a href="index.html">
-            <h1>Lucas Mauess</h1>
-        </a>
+        <a href="index.html" id="logo">Lucas Mauess</a>
 
-        <button id="menu-button"></button>
-        <div class="layer-menu"></div>
+        <button id="menu-button" onclick="openMenu();"></button>
+        <div class="layer-menu" onclick="closeMenu();">
+            <button id="close-button" onclick="closeMenu();"></button>
+        </div>
 
         <nav role="navigation">
-            <button id="close-button"></button>
             <ul>
-                <li><a href="index.html" accesskey="h">Home</a></li>
-                <li><a href="blog.html" accesskey="b">Blog</a></li>
-                <li><a href="projects.html" accesskey="p">Projects</a></li>
-                <li><a href="services.html" accesskey="s">Services</a></li>
-                <li><a href="work.html" accesskey="w">Work</a></li>
-                <li><a href="contact.html" accesskey="c">Contact</a></li>
-                <li><a href="about.html" accesskey="a">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>                
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
     </header>
 
-    <section class="full-screen page-bg img-thanks">
+    <section class="full-screen grayscale img-thanks">
 
-        <div class="full-screen-container page">
+        <div class="full-screen-container layer page">
 
             <p id="counter"></p>
 
-            <h2>Thanks!</h2>
+            <h1>Thanks!</h1>
 
-            <p>Your message was sent successfully! Among 24 hours you will receive an answer :)</p>
+            <p>Your message was sent successfully! Within 24 hours you will receive a reply.</p>
 
             <a href="index.html" class="button">Back to Home</a>
 
@@ -59,6 +58,7 @@
 
 <script src="scripts/menu.js"></script>
 <script src="scripts/counter.js"></script>
+<script src="scripts/pace.js"></script>
 
 <!-- Google Analytics -->
 <script>

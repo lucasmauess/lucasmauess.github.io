@@ -12,32 +12,33 @@
     <meta name="author" content="Lucas Mauess">
 
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/icons/favicon.png">
+
+    <script src="scripts/headroom.js"></script>
 </head>
     
 <body>
 	
-        <header role="banner">
+    <header id="header" role="banner">
 
-        <a href="index.html">
-            <figure></figure>
-            <h1>Lucas <span>Mauess</span></h1>
-        </a>
+        <a href="index.html" id="logo">Lucas Mauess</a>
 
-        <button id="menu-button"></button>
-        <div class="layer-menu"></div>
+        <button id="menu-button" onclick="openMenu();"></button>
+        <div class="layer-menu" onclick="closeMenu();">
+            <button id="close-button" onclick="closeMenu();"></button>    
+        </div>
 
         <nav role="navigation">
-            <button id="close-button"></button>
             <ul>
-                <li><a href="index.html" accesskey="h">Home</a></li>
-                <li><a href="blog.html" accesskey="b">Blog</a></li>
-                <li><a href="projects.html" accesskey="p">Projects</a></li>
-                <li><a href="services.html" accesskey="s">Services</a></li>
-                <li><a href="work.html" accesskey="w">Work</a></li>
-                <li><a href="contact.html" accesskey="c">Contact</a></li>
-                <li><a href="about.html" accesskey="a" class="active">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" id="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
@@ -45,12 +46,13 @@
 
     <section class="full-screen page-bg img-about">
 
-        <div class="full-screen-container page">
-	    	<h2>About</h2>
-            <p>A little bit about me</p>
+        <div class="full-screen-container layer page">
+        
+	    	<h1>About</h1>
+            <p>Learn more about my experiences and professional skills.</p>
+
             <a href="#down" class="down"></a>
         </div>
-
 
 	</section>
 
@@ -58,75 +60,81 @@
 
         <article>
 
-            <h3>About Me</h3>
+            <h2>A freelance developer and designer</h2>
 
-            <p>My name is Lucas Mauess, I am a Front-End Web Developer. I work with development of websites, webapps and UI/UX design projects for mobile applications and digital products. I am currently working as a freelancer for small and medium businesses, personal customers, and as well, as partner or consultant to digital agencies and starter projects.</p>
+            <!-- <img src="images/lucas-mauess.jpg" width="400px" alt="Lucas Mauess"> -->
 
-            <p>I specialize in front-end development, with focus on responsive design, acessibility, cross-browser compatibility, SEO-friendly and scalable code. With an eye for innovation, I combine my knowledge, skills and experience to deliver the best product possible. And I really like the possibility of working together with creative people and awesome teams. Interested? Hire me or contract my <a href="services.html" target="_blank">Services</a></p>
+            <p>My name is Lucas Mauess, I am a independent web developer and designer. I work with planning, design, development and optimization of websites, web/mobile applications and UI/UX projects for digital products. I am currently working as a freelancer for small and medium businesses, personal customers and as partner or consultant to digital agencies and startups.</p>
 
-            <p>I'm Brazilian and I live in Belém, on middle of the Amazon (the largest rainforest of the world). But here is not a jungle, is  the capital and largest city of the state of Pará, in the country's north. Here I study to undergraduate in Computer Science at Federal University of Pará (UFPA).  And the same way I love living here, I like to travel and discover new challenging experiences, not only in the world, but also in the World Wide Web :)</p>
+            <p>I specialize in front-end development, with focus on responsive design, performance, interactivity, cross-device compatibility, accessibility and optimization strategies. Always with an eye for innovation, I combine my knowledge, skills and experience to deliver the best project possible. I am a person very communicative and love the possibility of working together with creative people and awesome teams.</p>
 
-            <h3>My Projects</h3>
+            <p>I'm Brazilian and I live in Belém, on middle of the Amazon (the largest rainforest of the world). But here is not a jungle, is  the capital of the state of Pará and largest city in the country's north. Here I study to undergraduate in Computer Science at Federal University of Pará (UFPA).  And the same way I love living here, I like to travel and discover new challenging experiences, especially in the World Wide Web :)</p>
 
-            <p>I am advocate of open source technologies, especially that make free and open web. And I'm contributing to open source projects, to get involved and help the community. See all my <a href="projects.html" target="_blank">Projects</a></p>
+            <!-- <p>I founded the <a href="http://inblug.com/" target="_blank">INBLUG</a>, an startup specializing in the design and development of web sites and applications. That not only offer services, but the possibility to develop projects of everyone who do not know, how to transform your ideas into reality. Just, the INBLUG mission is more than design and develop, but convert great ideas into real products!</p> -->
 
-            <p>So, I co-founded the <a href="http://inblug.com/" target="_blank">INBLUG</a>, an startup specializing in the design and development of interactive projects of websites and mobile applications. But I created the INBLUG, not only thinking in offer these services, but also in possibility to develop the projects of everyone, who do not know, how to transform your ideas into practice. Just, the INBLUG mission is more than design and develop, but convert a great ideas into reality :)</p>
-
-            <h3>My Skills</h3>
+            <h2>My technical skills</h2>
             <ul>
                 <li>HTML (Jade - Haml - Erb)</li>
                 <li>CSS (Sass - Less - Stylus)</li>
-                <li>JavaScript
-                    <ul>
-                        <li>jQuery - AngularJS - ReactJS - Backbone</li>
-                        <li>Grunt - Gulp - Yeoman</li>
-                        <li>NodeJS</li>
-                    </ul>
-                </li>
+                <li>JavaScript (jQuery - AngularJS - ReactJS / Grunt - Gulp - Yeoman / NodeJS)</li>
                 <li>Front-End Frameworks (Bootstrap - Foundation)</li>
                 <li>SVG</li>
-                <li>PHP</li>
                 <li>Ruby (Ruby on Rails)</li>
+                <li>PHP</li>
                 <li>Python</li>
-                <li>Git</li>
-                <li>CMS (Joomla! - WordPress)</li>
-                <li>Databases (MySQL - MongoDB)</li>
-                <li>Linux</li>
-                <li>Microsoft Office (Word - Excel - PowerPoint - Outlook)</li>
-                <li>Adobe CC/DC (Photoshop - Illustrator - Acrobat)</li>
-                <li>UX/UI Design</li>
+                <li>CMS (WordPress - Joomla!)</li>
+                <li>VCS (Git)</li>
+                <li>Database (SQL)</li>
+                <li>User Interface (UI) and User Experience (UX)</li>
                 <li>Responsive Design (Mobile First)</li>
-                <li>Search Engine Optimization (SEO)</li>
+                <li>Search Engine Optimization (SEO) and Social Media Optimization (SMO)</li>
                 <li>Accessibility (WCAG)</li>
                 <li>Performance</li>
-                <li>Agile Development Methodologies
-                    <ul>
-                        <li>Scrum - Kanban</li>
-                        <li>TDD - Continuous Integration</li>
-                    </ul>
-                </li>
+                <!-- <li>Familiarity with Linux distros, Windows and macOS</li> -->
+                <!-- <li>Softwares and Productivity (Adobe CC/DC - Microsoft Office - Trello - Slack)</li> -->
+                <li>Agile Methodologies (Scrum - Kanban / TDD - Continuous Integration)</li>
             </ul>
-            
-            <h3>Resume</h3>
 
-            <p>If you want to know even more about me, just look at my <a href="resume.html">Resume</a>.</p>
+            <p>You are interested in some of my skills? Take a look at my <a href="services.html">Services</a>.</p>
 
-            <h3>Contact Me</h3>
+            <h2>My projects and works</h2>
 
-            <p>Feel free to ask any questions or if you want to work together, go to <a href="contact.html">Contact</a> and choose your favorite way to contact me.</p>
+            <p>I'm an enthusiast of open source technologies. I love collaborate and get involved in projects that help build a more free and open web (at the same time learn and exchange knowledge with the community). Feel free to explore and contribute with my open source <a href="projects.html">Projects</a> of web sites, applications, tools and experiments.</p>
+
+            <h2>My articles</h2>
+
+            <p>In free time I like to write articles about web and mobile development, design, marketing and trends. See my <a href="blog.html">Blog</a> to discover ideas and share it.</p>
+
+            <h2>Contact me</h2>
+
+            <p>If you have interested in hire me, get in touch at <a href="contact.html">Contact</a> page is many ways to contac me, send a message explaining your project idea or proposal or si . To stay connected with me see my social media profiles. Or just keep in touch to say hello.</p>
+
+
+            <!-- Interested? Hire me or contract my <a href="services.html" target="_blank">Services</a> -->
 
         </article>
 
     </section>
 
-
     <footer>
+        <ul>
+            <li><a href="index.html" accesskey="h">Home</a></li>
+            <li><a href="about.html" accesskey="a">About</a></li>
+            <li><a href="services.html" accesskey="s">Services</a></li>
+            <li><a href="projects.html" accesskey="p">Projects</a></li>
+            <li><a href="work.html" accesskey="w">Work</a></li>
+            <li><a href="blog.html" accesskey="b">Blog</a></li>
+            <li><a href="contact.html" accesskey="c">Contact</a></li>
+            <li><a href="licenses.html" accesskey="l">Licenses</a></li>
+        </ul>
         <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/header.js"></script>
+<script src="scripts/pace.js"></script>
 
 <!-- Google Analytics -->
 <script>

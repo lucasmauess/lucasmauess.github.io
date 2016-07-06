@@ -4,7 +4,7 @@
         background: transparent !important; 
         color: #000 !important; 
         text-shadow: none !important; 
-        filter:none !important; 
+        filter: none !important; 
         -ms-filter: none !important; 
     } 
 
@@ -31,7 +31,7 @@
     }
 
     .print {
-        display: block;
+        display:block;
     }
 
     img {
@@ -85,7 +85,8 @@
         page-break-before: always; 
     }
     
-    /*Estilos da Demo*/
+    /* demo */
+
     .header.print h1{
         width: 100%;
         margin-bottom: 0.5cm;
@@ -93,7 +94,7 @@
     }
 
     .header.print:after {
-        content: "Este artigo foi escrito pela designer Dani Guerrato e retirado do site Tableless.";
+        content: "Este artigo foi escrito por Lucas Mauess e retirado do site lucasmauess.com.";
     }
 
     .artigo {

@@ -1,10 +1,10 @@
 # [lucasmauess.com](http://lucasmauess.com/)
 
-My personal page hosted directly from a GitHub repository.
+My personal website.
 
 ## Purpose
 
-The objective of this repository is to gather information about me in a single web page, such as links to my profiles on social networks, ways to to contact me, hire me or contract my services, a blog to share ideas about web development and mainly promote my personal projects, my work and my contributions in the open source community. Feel free to explore!
+The objective of this repository is to gather information about me in a single web page, such as links to my profiles on social networks, ways to to contact me, hire me or contract my services, a blog to share ideas and mainly promote my personal projects, my work and my contributions in the open source community.
 
 ## Browser Support
 
@@ -16,5 +16,5 @@ The objective of this repository is to gather information about me in a single w
 
 Copyright © 2016 Lucas Mauess. 
 
-* All content is under  [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+* All content is under [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 * All source code is under [MIT License](http://mit-license.org/).

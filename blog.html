@@ -13,7 +13,7 @@
   	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
   	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/icons/favicon.png">
 
     <script src="scripts/headroom.js"></script>
 </head>
@@ -23,46 +23,45 @@
 
     <header role="banner" id="header">
 
-        <a href="index.html">
-        	<h1>Lucas Mauess</h1>
-        </a>
+        <a href="index.html" id="logo">Lucas Mauess</a>
 
 		<button id="menu-button" onclick="openMenu();"></button>
-		<div class="layer-menu" onclick="closeMenu();"></div>
+
+		<div class="layer-menu" onclick="closeMenu();">
+			<button id="close-button" onclick="closeMenu();"></button>
+		</div>
 
 		<nav role="navigation">
-			<button id="close-button" onclick="closeMenu();"></button>
 			<ul>
-			    <li><a href="index.html" accesskey="h">Home</a></li>
- 	            <li><a href="blog.html" accesskey="b" class="active">Blog</a></li>
- 	            <li><a href="projects.html" accesskey="p">Projects</a></li>
- 	            <li><a href="services.html" accesskey="s">Services</a></li>
-                <li><a href="work.html" accesskey="w">Work</a></li>
-                <li><a href="contact.html" accesskey="c">Contact</a></li>
-                <li><a href="about.html" accesskey="a">About</a></li>
+			    <li><a href="index.html">Home</a></li>
+			    <li><a href="about.html">About</a></li>
+			    <li><a href="services.html">Services</a></li>
+ 	            <li><a href="projects.html">Projects</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="blog.html" id="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
         
     </header>
 
-    <section class="full-screen page-bg img-blog">
+    <section class="full-screen img-blog">
 
-	    <div class="full-screen-container page">
+	    <div class="full-screen-container layer page">
 
-	    	<h2>Blog</h2>
-	    	
-	    	<p>Sharing ideas</p>
+	    	<h1>Blog</h1>
+	    	<p>Ideas about web, development, design, marketing and trends.</p>
 
-	    	<div class="page-bar">
+	    	<div class="bar">
+
+	    		<a href="#" title="Share this page">
+			    	<figure class="icon-share"></figure>
+			    	<span>Share</span>
+		    	</a>
 
 		    	<a href="#" title="Search for articles">
 		    		<figure class="icon-search"></figure>
 		    		<span>Search</span> 
-		    	</a>
-
-		    	<a href="#" title="Share this page">
-			    	<figure class="icon-share"></figure>
-			    	<span>Share</span>
 		    	</a>
 
 		    	<a href="#" title="View all categories">
@@ -77,9 +76,17 @@
 
 		    </div>
 
+			<a href="#down" class="down"></a>
+
 	    </div>
 
     </section>
+
+    <!-- Box Search -->
+
+    <!-- Box Share -->
+
+    <!-- Box Tags -->
 
 	<!-- <section>
     	
@@ -91,89 +98,89 @@
 
     </section> -->
 
-    <section class="bg-gray">
+    <section id="down">
 
-    	<a href="#" class="box-post">
+    	<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>Ruby</span>
-			<h2>How to install Jekyll on Windows</h2>
+			<h3>How to install Jekyll on Windows</h3>
 			<p>A simple guide to install all things necessary to run Jekyll on Windows with no problems.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
-			<span>Creativity</span>
-			<h2>How to LEGO become a powerfull tool for develop creativity</h2>
+			<span>Design</span>
+			<h3>How to LEGO become a powerfull tool for develop creativity</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-    	<a href="#" class="box-post">
+    	<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>CSS</span>
-			<h2>What to expect from 4 version of CSS?</h2>
+			<h3>What to expect from 4 version of CSS?</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url("");"></figure>
 			<span>HTML</span>
-			<h2>The best sites to learn HTML5 for free</h2>
+			<h3>The best sites to learn HTML5 for free</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>Fonts</span>
-			<h2>The best sites to find and download free Fonts</h2>
+			<h3>The best sites to find and download free fonts</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>Web Development</span>
-			<h2>Progressive Web Apps: the future of Web Development?</h2>
+			<h3>Progressive Web Apps is the future of web development?</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>SVG</span>
-			<h2>Animating SVG with CSS</h2>
+			<h3>Animating SVG with CSS</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>JavaScript</span>
-			<h2>The best ways to learn JavaScript online</h2>
+			<h3>The best ways to learn JavaScript online</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>Web Development</span>
-			<h2>Google Web Fundamentals – the best practices for modern web development</h2>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			<h3>Web Fundamentals – the best practices for web development</h3>
+			<p>A great guide made by Google Developers.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
-			<span>Web Development</span>
-			<h2>Accessibility x Usability</h2>
+			<span>UX</span>
+			<h3>Accessibility x Usability</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>SEO</span>
-			<h2>How to improve SEO?</h2>
+			<h3>How to improve SEO?</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
-		<a href="#" class="box-post">
+		<a href="#" class="post">
 			<figure style="background-image: url('');"></figure>
 			<span>APIs</span>
-			<h2>Push API – the new W3C standard for web notifications</h2>
+			<h3>Push API – the new W3C standard for web notifications</h3>
 			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
 		</a>
 
@@ -184,11 +191,24 @@
 	</section>
 
     <footer>
-    	<p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
+    	<ul>
+            <li><a href="index.html" accesskey="h">Home</a></li>
+            <li><a href="about.html" accesskey="a">About</a></li>
+            <li><a href="services.html" accesskey="s">Services</a></li>
+            <li><a href="projects.html" accesskey="p">Projects</a></li>
+            <li><a href="work.html" accesskey="w">Work</a></li>
+            <li><a href="blog.html" accesskey="b">Blog</a></li>
+            <li><a href="contact.html" accesskey="c">Contact</a></li>
+            <li><a href="licenses.html" accesskey="l">Licenses</a></li>
+	    </ul>
+	    <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
     </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>   
+<script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/header.js"></script>
+<script src="scripts/pace.js"></script>
 
 <!-- Google Analytics -->
 <script>

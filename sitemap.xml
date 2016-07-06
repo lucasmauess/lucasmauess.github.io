@@ -2,67 +2,61 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>http://lucasmauess.com/</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>1.00</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/projects</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/services</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/work</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/about</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/contact</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/blog</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>weekly</changefreq>
-	<priority>0.6</priority>
+	<priority>0.8</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/licenses</loc>
-	<lastmod>2016-02-22</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.2</priority>
-</url>
-<url>
-	<loc>http://lucasmauess.com/feedback</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/thanks</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.0</priority>
 </url>
 <url>
 	<loc>http://lucasmauess.com/404</loc>
-	<lastmod>2016-02-22</lastmod>
+	<lastmod>2016-04-02</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.0</priority>
 </url>

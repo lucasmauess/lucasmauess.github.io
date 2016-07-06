@@ -12,32 +12,33 @@
     <meta name="author" content="Lucas Mauess">
 
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
-    <link rel="stylesheet" href="styles/images.css" type="text/css"/>
+    <link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/icons/favicon.png">
+
+    <script src="scripts/headroom.js"></script>
 </head>
     
 <body>
 
-    <header role="banner">
+    <header role="banner" id="header">
 
-        <a href="index.html">
-            <h1>Lucas Mauess</h1>
-        </a>
+        <a href="index.html" id="logo">Lucas Mauess</a>
 
-        <button id="menu-button"></button>
-        <div class="layer-menu"></div>
+        <button id="menu-button" onclick="openMenu();"></button>
+        <div class="layer-menu" onclick="closeMenu();">
+            <button id="close-button" onclick="closeMenu();"></button>
+        </div>
 
         <nav role="navigation">
-            <button id="close-button"></button>
             <ul>
-                <li><a href="index.html" accesskey="h">Home</a></li>
-                <li><a href="blog.html" accesskey="b">Blog</a></li>
-                <li><a href="projects.html" accesskey="p">Projects</a></li>
-                <li><a href="services.html" accesskey="s">Services</a></li>
-                <li><a href="work.html" accesskey="w" class="active">Work</a></li>
-                <li><a href="contact.html" accesskey="c">Contact</a></li>
-                <li><a href="about.html" accesskey="a">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="work.html" id="active">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
@@ -45,26 +46,116 @@
 
     <section class="full-screen page-bg img-work">
 
-        <div class="full-screen-container page">
-	    	<h2>Work</h2>
-            <p>Be happy doing what you love</p>
+        <div class="full-screen-container layer page">
+
+	    	<h1>Work</h1>
+            <p>Be happy doing what you love.</p>
+
             <a href="#down" class="down"></a>
+            
         </div>
 
     </section>
 
+<!--     <section id="down">
+
+        <h3>Selected Case Studies</h3>
+
+        <div class="work">
+            <div class="img-local">
+                <a href="#" class="pink-2-color">
+                    <figure class="inblug"></figure>
+                    <h3>INBLUG</h3>
+                </a>
+            </div>
+            <span>Website & Web App</span>
+            <p>INBLUG is a web services startup from Brazil, focused in responsive design and development of progressive apps.</p>
+        </div>
+            
+        <div class="work">
+            <div style="background-image: url('images/work/radio_web_ufpa.jpg');">
+                <a href="#" class="blue-color">
+                    <figure style="background-image: url('images/work/radio_web_ufpa.svg');"></figure>
+                    <h3>Rádio Web UFPA</h3>
+                </a>
+            </div>
+            <span>Web App & Hotsites</span>
+            <p>Rádio Web UFPA is the official radio of the UFPA, one of the most important federal universities in Brazil.</p>
+        </div>
+
+        <div class="work">
+            <div style="background-image: url('images/work/na-cuia.png');">
+                <a href="#" class="purple-color">
+                    <figure style="background-image: url('images/work/na_cuia.png');"></figure>
+                    <h3>Na Cuia Magazine</h3>
+                </a>
+            </div>
+            <span>Website</span>
+            <p>Na Cuia is a independent college magazine focused in cultural journalism on the state of Pará in Brazil.</p>
+        </div>
+
+    </section> -->
+
+
     <section id="down">
 
-        <article>
-            
-            <p>Coming soon.</p>
-        </article>
-        
+        <div class="content">
+
+        <div class="content">
+
+            <h3>2016</h3>
+            <ul>
+                <li><a href="http://inblug.com/">INBLUG</a></li>
+                <li><a href="#">Jornal Primeiras Linhas</a></li>
+                <li><a href="#">Memória Facom UFPA</a></li>
+                <li><a href="#">GEDAI UFPA</a></li>
+            </ul>
+        </div>
+
+            <h3>2015</h3>
+            <ul>
+                <li><a href="http://nacuia.com.br/">Revista Cultural Na Cuia</a></li>
+                <li><a href="#">Rádio Web UFPA</a></li>
+                <li><a href="#">Rádio Web UFPA Play</a></li>
+                <li><a href="#">Eleições na UFPA</a></li>
+                <li><a href="#">Sintonize UFPA</a></li>
+                <li><a href="#">Belém 400 anos</a></li>
+                <li><a href="#">Listão Vestibular UFPA</a></li>
+                <li><a href="#">40 anos Facom UFPA</a></li>
+
+            </ul>
+        </div>
+
+
+        <div class="content">
+
+            <h3>2014</h3>
+            <ul>
+                <li><a href="#">Lucas Mauess</a></li>
+            </ul>
+        </div>
+
     </section>
+
+    <footer>
+        <ul>
+            <li><a href="index.html" accesskey="h">Home</a></li>
+            <li><a href="about.html" accesskey="a">About</a></li>
+            <li><a href="services.html" accesskey="s">Services</a></li>
+            <li><a href="projects.html" accesskey="p">Projects</a></li>
+            <li><a href="work.html" accesskey="w">Work</a></li>
+            <li><a href="blog.html" accesskey="b">Blog</a></li>
+            <li><a href="contact.html" accesskey="c">Contact</a></li>
+            <li><a href="licenses.html" accesskey="l">Licenses</a></li>
+        </ul>
+        <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
+    </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/header.js"></script>
+<script src="scripts/pace.js"></script>
 
 <!-- Google Analytics -->
 <script>

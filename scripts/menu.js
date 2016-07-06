@@ -2,9 +2,11 @@
 
 function openMenu() {
   document.body.style.overflow = 'hidden';
+  document.getElementById('menu-button').style.display='none';
 }
 function closeMenu() {
   document.body.style.overflow = '';
+  document.getElementById('menu-button').style.display='block';
 }
 
 // menu
@@ -49,9 +51,6 @@ function closeMenu() {
 	init();
 
 })();
-
-
-
 
 /*!
  * classie - class helper functions

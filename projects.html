@@ -7,14 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Projects – Lucas Mauess</title>
-	<meta name="description" content="View all projects of Lucas Mauess.">
-	<meta name="keywords" content="lucas mauess, lucas maues, projects">
+	<meta name="description" content="Open source projects of web sites, applications and tools. Discover and contribute.">
+	<meta name="keywords" content="lucas mauess, lucas maues, lucas maués, lucas mauess projects, lucas maues projects">
 	<meta name="author" content="Lucas Mauess">
 
   	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
   	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/icons/favicon.png">
 
     <script src="scripts/headroom.js"></script>
 </head>
@@ -23,23 +23,22 @@
 
     <header role="banner" id="header">
 
-        <a href="index.html">
-            <h1>Lucas Mauess</h1>
-        </a>
+        <a href="index.html" id="logo">Lucas Mauess</a>
 
-        <button id="menu-button"></button>
-        <div class="layer-menu"></div>
+        <button id="menu-button" onclick="openMenu();"></button>
+        <div class="layer-menu" onclick="closeMenu();">
+            <button id="close-button" onclick="closeMenu();"></button>
+        </div>
 
         <nav role="navigation">
-            <button id="close-button"></button>
             <ul>
-                <li><a href="index.html" accesskey="h">Home</a></li>
-                <li><a href="blog.html" accesskey="b">Blog</a></li>
-                <li><a href="projects.html" accesskey="p" class="active">Projects</a></li>
-                <li><a href="services.html" accesskey="s">Services</a></li>
-                <li><a href="work.html" accesskey="w">Work</a></li>
-                <li><a href="contact.html" accesskey="c">Contact</a></li>
-                <li><a href="about.html" accesskey="a">About</a></li>
+			    <li><a href="index.html">Home</a></li>
+			    <li><a href="about.html">About</a></li>
+			    <li><a href="services.html">Services</a></li>
+ 	            <li><a href="projects.html" id="active">Projects</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
@@ -47,17 +46,10 @@
 
     <section class="full-screen page-bg img-projects">
 
-	    <div class="full-screen-container page">
+	    <div class="full-screen-container layer page">
 
-	    	<h2>Projects</h2>
-	    	<p>For a Open Web</p>
-
-			<!-- <div class="page-bar">
-		    	<a href="#" title="Send your feedback about the projects">
-		    		<figure class="icon-feedback"></figure>
-		    		<span>Feedback</span>
-		    	</a>
-		    </div> -->
+	    	<h1>Projects</h1>
+	    	<p>Open source web sites, applications, tools and experiments.</p>
 
 		    <a href="#down" class="down"></a>
 
@@ -65,186 +57,162 @@
 
    	</section>
 
-    <section class="chapter" id="down">
+    <section id="down">
 
-		<div class="box-pro">
+    	<!-- <h3>Web Sites & Apps</h3> -->
 
-			<div class="img-search">
-				<a href="http://inblug.com/searchy" class="blue-color">
-					<figure class="isearch-icon"></figure>
-					<h2>Searchy</h2>
-				</a>
-			</div>
-			<span>Simple web search tool</span>
-			<p>A web search facilitator. Quickly search in multiple search engines or find content direct at source with search modules. With voice search and total privacy.</p>
-		</div>
+    	<div class="tile-container">
 
-		<div class="box-pro">
+		<a href="http://inblug.com/searchy" class="project blue-color">
+			<div class="search-icon"></div>
+			<h4>Searchy</h4>
+			<p>A modern tool to search on web. Quickly search in multiple engines, use modules to find any content direct at source. With voice recognition, auto suggest and total privacy.</p>
+		</a>
 
-			<div class="img-video">
-				<a href="http://inblug.com/vydeon" class="red-color">
-					<figure class="video-icon"></figure>
-					<h2>Vydeon</h2> <!-- VideoZy -->
-				</a>
-			</div>
-			<span>Beautiful access to video streaming services</span>
-			<p>An immersive TV based interface with a collection of the best channels and free streaming services to watch on the web.</p>
-		</div>
+		<a href="http://inblug.com/vydeon" class="project red-color">
+			<div class="video-icon"></div>
+			<h4>Vydeon</h4> <!-- VideoZy -->
+			<p>A immersive and customizable TV based interface on the web with a collection of the best channels and streaming services to watch online.</p>
+		</a>
 
-		 <div class="box-pro">
-			 <div class="img-feed">
-			 	<a href="http://inblug.com/flyed" class="orange-color">
-				 	<figure class="worlfeed"></figure>
-					<h2>Flyeed</h2> <!-- WorlFeed -->
-				</a>
-			</div>
-			<span>News made by social</span>
-			<p>Stay updated with social feed the world's leading news websites. In real time update with the breaking news.</p>
-		</div>
+		<a href="http://inblug.com/flyed" class="project orange-color">
+			<div class="worlfeed"></div>
+			<h4>Flyeed</h4> <!-- WorlFeed -->
+			<p>News made by social. Stay updated with social media feed of the world's leading news websites. In real time update with the breaking news.</p>
+		</a>
 
-		<div class="box-pro">
-			<div class="img-favoritess">
-				<a href="http://inblug.com/favys" class="yellow-color">
-					<figure class="favoritess-icon"></figure>
-					<h2>Favys</h2>
-				</a>
-			</div>
-			<span>Modern visual directory</span>
+		<a href="http://inblug.com/homy" class="project yellow-color">
+			<div class="home-icon"></div>
+			<h4>Homy</h4> <!-- Favys / Favoritess -->
 			<p>A modern visual directory that shows only the best and most popular websites of the world in many different categories.</p>
-		</div>
+		</a>
 
-		<div class="box-pro">
-			<div class="img-design">
-				<a href="http://inblug.com/desygm" class="purple-color">
-					<figure class="design-icon"></figure>
-					<h2>Desygn</h2>
-				</a>
-			</div>
-			<span>Redesign your think</span>
+		<a href="http://inblug.com/localy" class="project green-color">
+			<div class="local-icon"></div>
+			<h4>Localy</h4>
+			<p>See the best places near you, based on your current location. Foursquare API / Google Maps API.</p>
+		</a>
+
+		<a href="http://inblug.com/desygn" class="project purple-color">
+			<div class="design-icon"></div>
+			<h4>Desygn</h4>
 			<p>Redesign of popular websites and applications. Because is time to view everything in a new perspective.</p>
-		</div>
+		</a>
 
-		<div class="box-pro">
-			<div class="img-education">
-				<a href="http://inblug.com/educy" class="aqua-color">
-					<figure class="edu-icon"></figure>
-					<h2>Educy</h2>
-				</a>
-			</div>
-			<span>Link to free online courses</span> 
-			<p>Directory that gathers access to the best free online courses in one place. Learn anything, anywhere.</p>
-		</div>
+		<a href="http://inblug.com/muxyc" class="project pink-color">
+			<div class="music-icon"></div>
+			<h4>Muxyc</h4>
+			<p>Find metadata about artists, albums, and tracks directly from streaming music services catalogues. Gracenote Web API / SoundCloud API / Spotify API</p>
+		</a>
 
-		<div class="box-pro">
-			<div class="img-camera">
-				<a href="http://inblug.com/camery" class="purple-color">
-					<figure class="camram"></figure>
-					<h2>Camery</h2>
-				</a>
-			</div>
-			<span>Simple webcam viewer</span>
-			<p>A very simple webcam viewer application.</p>
-		</div>
+		<a href="http://inblug.com/appy" class="project blue-2-color">
+			<div class="app-icon"></div>
+			<h4>Appy</h4>
+			<p>The most popular applications in mobile stores (Google Play Store, App Store, Windows Store, Amazon Appstore, Opera Mobile Store, Chrome Web Store and Firefox Marketplace) in one place.</p>
+		</a>
 
-		<div class="box-pro">
-			<div class="img-music">
-				<a href="http://inblug.com/muzyc" class="pink-color">
-					<figure class="muzyc"></figure>
-					<h2>Muzyc</h2>
-				</a>
-			</div>
-			<span>SoundCloud / Spotify API</span>
-			<p>Find, with no login, metadata about artists, albums, and tracks directly from the Spotify and SondCloud catalogues.</p>
-		</div>
+		<a href="http://inblug.com/camery" class="project purple-color">
+			<div class="camera-icon"></div>
+			<h4>Camery</h4>
+			<p>A very simple webcam and camera viewer application.</p>
+		</a>
 
-		<div class="box-pro">
-			<div class="img-local">
-				<a href="http://inblug.com/localy" class="pink-2-color">
-					<figure class="localy"></figure>
-					<h2>Localy</h2>
-				</a>
-			</div>
-			<span>Foursquare / Google Maps API</span>
-			<p>See the best places near you, based on your current location.</p>
-		</div>
+		<a href="http://inblug.com/educy" class="project aqua-color">
+			<div class="education-icon"></div>
+			<h4>Educy</h4>
+			<p>Link to free online courses.</p>
+		</a>
 
-		<div class="box-pro">
-			<div class="img-game">
-				<a href="http://inblug.com/gamys" class="green-color">
-					<figure class="gamezun"></figure>
-					<h2>Gamys</h2>
-				</a>
-			</div>
-			<span>Games that run on  Web</span>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-		</div>
+		<a href="http://inblug.com/gamys" class="project green-2-color">
+			<div class="game-icon"></div>
+			<h4>Gamys</h4>
+			<p>Games that run on Web.</p>
+		</a>
 
-		<div class="box-pro">
-			<div class="img-apps">
-				<a href="http://inblug.com/appy" class="blue-2-color">
-					<figure class="appdow"></figure>
-					<h2>Appy</h2>
-				</a>
-			</div>
-			<span>Top mobile apps in stores</span>
-			<p>The more downloaded applications from the Google Play Store, iTunes App Store, Windows Store, Opera Mobile Store, Chrome Web Store and Firefox Marketplace.</p>
-		</div>
+		<a href="http://inblug.com/scyence" class="project green-2-color">
+			<div class="science-icon"></div>
+			<h4>Scyence</h4>
+			<p>Modern science resources.</p>
+		</a>
 
+		</div>-
 
-		<div class="box-pro">
-			<div class="img-science">
-				<a href="http://inblug.com/scyence" class="green-2-color">
-					<figure class="icon-science"></figure>
-					<h2>Scyence</h2>
-				</a>
-			</div>
-			<span>Modern science resources</span>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-		</div>
     </section>
 
- 	<section class="chapter">
+	<!-- <section>
+
+ 		<h2>Startup</h2>
 
     	<div class="box-pro">
 			<div class="img-inblug">
 				<a href="http://inblug.com/">
 					<figure class="inblug"></figure>
-					<h2>INBLUG</h2>
 				</a>
 			</div>
+			<h3>INBLUG</h3>
 			<span>Make an idea in web project</span>
 			<p>A startup specializing in collaborative design and development of high-end projects of websites and mobile apps.</p>
 		</div>
 
-    </section>
+    </section> -->
 
-    <section class="chapter">
+    <section>
 
-			<a href="#" class="pro-simple">
-				<h2>INBLUG Boilerplate</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-			</a>
+    <h3>Tools & Experiments</h3>
 
-			<a href="#" class="pro-simple">
-				<h2>Web Speech API</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-			</a>
+		<a href="#" class="project">
+			<div style="background-image: url('images/projects/template.png');"></div>
+			<h4>Boilerplate</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
+		</a>
 
-			<a href="#" class="pro-simple">
-				<h2>Web Notifications API</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-			</a>
+		<a href="#" class="project">
+			<div style="background-image: url('images/projects/voice.png');"></div>
+			<h4>Web Speech API</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
+		</a>
+
+		<a href="#" class="project">
+			<div style="background-image: url('images/projects/notification.png');"></div>
+			<h4>Web Notifications API</h4>
+			<p>Examples of web notifications, with a standards guide to implement the W3C API for end-user notifications.</p>
+		</a>
+
+		<a href="#" class="project">
+			<div style="background-image: url('images/projects/localization.png');"></div>
+			<h4>Geolocation API</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
+		</a>
+
+		<a href="#" class="project">
+			<div style="background-image: url('images/projects/media.png');"></div>
+			<h4>Media Capture API</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
+		</a>
+
+		
 
     </section>
 
     <footer>
-    	<p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
+    	<ul>
+            <li><a href="index.html" accesskey="h">Home</a></li>
+            <li><a href="about.html" accesskey="a">About</a></li>
+            <li><a href="services.html" accesskey="s">Services</a></li>
+            <li><a href="projects.html" accesskey="p">Projects</a></li>
+            <li><a href="work.html" accesskey="w">Work</a></li>
+            <li><a href="blog.html" accesskey="b">Blog</a></li>
+            <li><a href="contact.html" accesskey="c">Contact</a></li>
+            <li><a href="licenses.html" accesskey="l">Licenses</a></li>
+	    </ul>
+	    <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="scripts/scroll.js"></script>
 <script src="scripts/menu.js"></script>
 <script src="scripts/header.js"></script>
+<script src="scripts/pace.js"></script>
 
 <!-- Google Analytics -->
 <script>
