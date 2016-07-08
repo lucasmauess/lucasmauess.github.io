@@ -342,7 +342,7 @@ h1 {
 }
 
 h2 {
-  font: 700 58px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  font: 700 58px 'Nova-Bold', 'Roboto-Bold', Arial, sans-serif;
   text-align: center;
   max-width: 620px;
   margin: 0 auto;
@@ -350,7 +350,7 @@ h2 {
 }
 
 h3 {
-  font: 700 48px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  font: 700 32px 'Nova-Bold', 'Roboto-Bold', Arial, sans-serif;
   text-align: center;
   max-width: 620px;
   margin: 0 auto;
@@ -470,7 +470,7 @@ article blockquote {
 
 .img-home { background-image: url("../images/backgrounds/lucas-0.jpg"); background-position: left center !important; }
 .img-about { background-image: url("../images/backgrounds/lucas-3.jpg"); }
-.img-projects { background-image: url("../images/backgrounds/sky-balloon.jpg"); }
+.img-projects { background-image: url("../images/backgrounds/sky-balloon.jpg"); background-position: right center !important; }
 .img-services { background-image: url("../images/backgrounds/notebook-smartphone.jpg"); }
 .img-work { background-image: url("../images/backgrounds/workdesk.jpg"); }
 .img-blog { background-image: url("../images/backgrounds/workspace.jpg"); }
@@ -571,11 +571,7 @@ article blockquote {
   padding: 10px 20px;
   margin: 6px;
   background-color: transparent;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  transition: all .2s linear;
+  transition: all .25s linear;
   border: none;
   border-radius: 0;
 }
@@ -706,8 +702,6 @@ article blockquote {
   float: left;
   text-align: left;
   padding: 20px 0 14px;
-  color: #333;
-  font: 700 32px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
   line-height: normal;
 }
 .home-articles p {
@@ -722,7 +716,7 @@ article blockquote {
 
 /* Block */
 
-.container-block {
+.block-container {
   position: relative;
   display: inline-block;
   max-width: 980px;
@@ -853,7 +847,7 @@ article blockquote {
 }
 .home p {
   font: 700 32px 'Nova-Bold', 'Roboto-Bold', Arial, sans-serif;
-  padding: 12px 0;
+  padding: 18px 0;
   letter-spacing: 1px;
   line-height: normal;
   text-transform: none;
@@ -1111,7 +1105,7 @@ article blockquote {
   width: 100%;
   height: 100%;
   color: transparent;
-  background: rgba(40, 40, 40, 0.6);
+  background: rgba(40, 40, 40, 0.0);
   transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1119,17 +1113,21 @@ article blockquote {
   -o-transition: all 0.25s ease-in-out;
 }
 .tile a:hover, .tile a:focus {
-  background: rgba(40, 40, 40, 0.92);
+  background: rgba(40, 40, 40, 1);
 }
+
+.tile a:hover h4, .tile a:focus h4 {
+  color: #fff;
+}
+
 .tile h4 {
   position: absolute;
   bottom: 0;
   left: 0;
   text-align: left;
   padding: 38px 38px;
-  font-weight: 700;
-  font-family: 'Nova-Bold', Arial, sans-serif;
-  color: #fff;
+  font: 28px 700 'Nova-Bold', Arial, sans-serif;
+  color: transparent;
   max-width: 480px;
   letter-spacing: normal;
 }
@@ -1195,10 +1193,6 @@ article blockquote {
   height: 100%;
   color: transparent;
   background-color: rgba(40, 40, 40, 1.0);
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 .box-pro div a:hover, .box-pro div a:focus {
@@ -1262,10 +1256,6 @@ article blockquote {
   height: 360px;
   background-color: #fff;
   transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
 }
 .project:hover, .project:focus {
   background-color: #eee;
@@ -1276,11 +1266,7 @@ article blockquote {
   color: #fff;
 }
 .project h4, .project p {
-    transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .project h4 {
@@ -1314,103 +1300,6 @@ article blockquote {
   background-color: #333;
 }
 
-/* Box - Work */
-
-.work {
-  position: relative;
-  display: inline-block;
-  float: none;
-  margin: 20px;
-  padding: 0;
-  text-align: center;
-  border: 0;
-  height: 540px;
-  width: 300px;
-  background-color: #fff;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-}
-.work div {
-  background-position: center;
-  background-size: cover;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.work div a {
-  position: relative;
-  display: block;
-  float: left;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  color: transparent;
-  background-color: rgba(40, 40, 40, 0.8);
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-.work div a:hover, .work div a:focus {
-  color: #fff;
-  -webkit-transform: scale(1.15);
-  -moz-transform: scale(1.15);
-  -o-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15);
-}
-.work figure {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
-  background-size: 64px;
-  background-color: transparent;
-}
-.work h3 {
-  position: absolute;
-  top: 156px;
-  height: auto;
-  margin: 0 auto;
-  width: 80%;
-  padding: 0 10%;
-  font: 500 32px 'Nova-Bold', Arial, sans-serif;
-  color: #fff;
-  text-align: center;
-}
-.work p {
-  float: left;
-  margin: 0 auto;
-  padding: 18px 0 0;
-  text-align: center;
-  font: 400 16px 'Roboto-Regular', Arial, sans-serif;
-  line-height: 1.68;
-  letter-spacing: 0;
-  color: rgba(0,0,0,0.7);
-}
-.work span {
-  float: left;
-  text-align: center;
-  padding: 24px 0 0;
-  color: #444;
-  width: 100%;
-  font: 500 14px 'Roboto-Medium', Arial, sans-serif;
-  line-height: 1.68;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.img-inblug { background-image: url('../images/backgrounds/moutain.jpg'); }
 .img-favoritess { background-image: url('../images/backgrounds/nyc.jpg'); }
 .img-search { background-image: url('../images/backgrounds/projects_search.jpg'); }
 .img-feed { background-image: url('../images/backgrounds/project_newspapers.jpg'); }
@@ -1645,7 +1534,7 @@ input[type="submit"]:active {
   .alternate {
     height: auto;
   }
-  .container-block {
+  .block-container {
     height: auto;
     background-color: transparent;
   }
@@ -1656,7 +1545,7 @@ input[type="submit"]:active {
   .block-text {
     width: 90%;
     height: auto;
-    padding: 24px 5%;
+    padding: 18px 5%;
   }
 
 }
@@ -1687,7 +1576,7 @@ input[type="submit"]:active {
     font-size: 38px; 
   }
   h3 { 
-    font-size: 32px; 
+    font-size: 28px; 
   }
   p, li { 
     font-size: 18px; 
