@@ -1528,14 +1528,15 @@ input[type="submit"]:active {
   .box a {
     width: 48%
   }
+  .box-pro { 
+    width: 44%; 
+  }
 
   .tile { 
     max-width: 48%; 
     height: 280px; 
   }
-  .box-pro { 
-    width: 44%; 
-  }
+
   .alternate {
     height: auto;
   }
