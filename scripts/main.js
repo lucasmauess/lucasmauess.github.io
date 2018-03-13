@@ -1,3 +1,17 @@
+// register service worker
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      // registration was successful
+      console.log('ServiceWorker registration successful, with scope: ', registration.scope);
+    }).catch(function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed, with ', err);
+    });
+  });
+}
+
 // define header for headroom.js
 
 var header = document.querySelector("header");
@@ -63,20 +77,6 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
 });
-
-// register service worker
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-      // registration was successful
-      console.log('ServiceWorker registration successful :) with scope: ', registration.scope);
-    }).catch(function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed! ', err);
-    });
-  });
-}
 
 // console signature
 
