@@ -29,15 +29,6 @@ new Headroom(header, {
   }
 }).init();
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 10) {
-        $("header").addClass("scroll");
-    } else {
-        //remove class (changes defined in css)
-       $("header").removeClass("scroll");
-    }
-});
-
 // navigation menu
 
 $('#menu').on('click', function() {
@@ -80,5 +71,5 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
 // console signature
 
-console.log('\n%cmade by @LucasMauess', 'background:#000;color:#fff;padding:5px 10px;');
-// console.log('%cwww.lucasmauess.com\n', 'margin:0 5px;text-decoration:underline;');
+console.log('\n%cmade with <3 by Lucas Maués', 'background:#000;color:#fff;padding:5px 8px;');
+// console.log('%cwww.lucasmaues.com\n', 'margin:0 5px;text-decoration:underline;');

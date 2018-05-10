@@ -20,34 +20,34 @@
     </script>
 </head>
 
-<body class="info-page">
+<body>
 
     <header role="banner">
+        <div>
+            <a id="logo" href="/">Lucas Maués</a>
+            <button id="menu" role="button" aria-label="open navigation menu" accesskey="1">Menu</button>
 
-        <a id="logo" href="/">Lucas Maués</a>
-        <button id="menu" role="button" aria-label="open navigation menu" accesskey="1">Menu</button>
-
-        <nav role="navigation">
-            <button id="close" role="button" aria-label="close navigation menu" accesskey="2">Close</button>
-            <ul>
-                <li><a href="/#about" accesskey="a">About me</a></li>
-                <li><a href="/#work" accesskey="p">Work &amp; projects</a></li>
-                <li><a href="/#services" accesskey="s">What I can do for you</a></li>
-                <li><a href="/#contact" accesskey="c">Get in touch</a></li>
-                <li><a href="https://medium.com/@lucasmaues" target="_blank" rel="noopener" accesskey="b">Visit my blog</a></li>
-            </ul>
-        </nav>
-
+            <nav role="navigation">
+                <button id="close" role="button" aria-label="close navigation menu" accesskey="2">Close</button>
+                <ul>
+                    <li><a href="/about" accesskey="1">About</a></li>
+                    <li><a href="/services" accesskey="2">Services</a></li>
+                    <li><a href="/work" accesskey="3">Work</a></li>
+                    <li><a href="/contact" accesskey="4">Contact</a></li>
+                    <li><a href="https://medium.com/@lucasmaues" target="_blank" rel="noopener" accesskey="5">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <section class="full-screen">
 
-        <div class="screen-container">
+        <div class="screen-container info-page">
             <div class="gif" id="background"></div>
 
             <div class="left">
-                <h1><strong>Thanks!</strong><br> Stay happy</h1>
-                <p>Your message was sent successfully. I'll answer soon as possible in the next 48 hours.</p>
+                <h1>Thanks!</h1>
+                <p>Your message was sent successfully. I will answer within one day :)</p>
                 <a href="/" class="button bounce">Back to homepage</a>
             </div>
         </div>
@@ -62,7 +62,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
 <script src="scripts/main.js"></script>
 <script>
- var images = ['//media1.tenor.com/images/e67b1f68b3daa0078eb8a580a0a5efbd/tenor.gif', '//media1.tenor.com/images/c3789dc6cb40fc7dcabf993ed939d72f/tenor.gif', '//media1.tenor.com/images/d1a1df7d256968216e1d11de3fe4905f/tenor.gif', '//media1.tenor.com/images/cf4cc7db45b131d3a0b2bd9db4f72dae/tenor.gif'];
+ var images = ['//media1.tenor.com/images/de5a81aa8a3ef29a500f569fc540f80f/tenor.gif', '//media1.tenor.com/images/4525620a4e87c14081aa84b70e410034/tenor.gif?itemid=7629159', '//media1.tenor.com/images/cf4cc7db45b131d3a0b2bd9db4f72dae/tenor.gif'];
  $('#background').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
 </script>
 

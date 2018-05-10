@@ -3,43 +3,46 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<title>Lucas Maués – Web Developer &amp; Designer</title>
-  	<meta name="description" content="More than create sites or apps, build immersive digital experiences that empower people and brands. Want to discuss an project? Let's talk!">
+  	<meta name="description" content="More than create sites or apps, build immersive digital experiences that empower people and brands. Want to discuss your project? Let's talk!">
   	<meta name="keywords" content="lucas maués, lucas maues, lucas mauess">
   	<meta name="author" content="Lucas Maués">
 
   	<link rel="canonical" href="https://lucasmaues.com">
 
-  	<link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="favicon.ico">
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Lucas Maués">
-    <link rel="icon" sizes="192x192" type="image/png" href="images/touch/icon-192x192.png">
-    <meta name="theme-color" content="#000">
+    <link rel="icon" sizes="192x192" type="image/png" href="images/icons/icon-192x192.png">
+    <meta name="theme-color" content="#000000">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Lucas Maués">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/touch/apple-touch-icon-180x180.png">
-	<link rel="apple-touch-icon" sizes="167x167" href="images/touch/apple-touch-icon-167x167.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/touch/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/touch/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/touch/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="images/icons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <meta name="msapplication-tap-highlight" content="no">
-	<meta name="msapplication-TileColor" content="#fff"/>
-	<meta name="msapplication-TileImage" content="images/touch/ms-tile.png"/>
-	<meta name="msapplication-square70x70logo" content="images/touch/ms-smalltile.png">
-	<meta name="msapplication-square150x150logo" content="images/touch/ms-mediumtile.png">
-	<meta name="msapplication-wide310x150logo" content="images/touch/ms-widetile.png">
-	<meta name="msapplication-square310x310logo" content="images/touch/ms-largetile.png">
+	<meta name="msapplication-TileColor" content="#000000"/>
+	<meta name="msapplication-TileImage" content="images/icons/ms-tile.png"/>
+	<meta name="msapplication-square70x70logo" content="images/icons/ms-smalltile.png">
+	<meta name="msapplication-square150x150logo" content="images/icons/ms-mediumtile.png">
+	<meta name="msapplication-wide310x150logo" content="images/icons/ms-widetile.png">
+	<meta name="msapplication-square310x310logo" content="images/icons/ms-largetile.png">
 
     <meta itemprop="name" content="Lucas Maués – Web Developer & Designer">
-	<meta itemprop="description" content="More than create sites or apps, build immersive digital experiences that empower people and brands.">
+	<meta itemprop="description" content="Working to create sites, apps and immersive Web experiences that empower people and brands to do more online.">
 	<meta itemprop="image" content="https://lucasmaues.com/images/share.png">
 	<link rel="publisher" href="https://plus.google.com/+LucasMauess"/>
 
@@ -49,14 +52,16 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Lucas Maués – Web Developer & Designer">
 	<meta property="og:image" content="https://lucasmaues.com/images/share.png">
-	<meta property="og:description" content="More than create sites or apps, build immersive digital experiences that empower people and brands.">
+	<meta property="og:description" content="Working to create sites, apps and immersive Web experiences that empower people and brands to do more online.">
 	<meta property="og:site_name" content="Lucas Maués">
 
     <meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@lucasmauess">
 	<meta name="twitter:title" content="Lucas Maués – Web Developer & Designer">
-	<meta name="twitter:description" content="More than create sites or apps, build immersive digital experiences that empower people and brands.">
+	<meta name="twitter:description" content="Working to create sites, apps and immersive Web experiences that empower people and brands to do more online.">
 	<meta name="twitter:image" content="https://lucasmaues.com/images/share.png">
+
+	<meta name="p:domain_verify" content="6bce9c6ed75f07c9be6e493be7cb3852"/>
 
 	<script async src="//www.googletagmanager.com/gtag/js?id=UA-60745752-1"></script>
 	<script>
@@ -71,91 +76,74 @@
 
 	<header role="banner">
 
-		<button id="menu" role="button" aria-label="open navigation menu" accesskey="1">Menu</button>
+		<div>
+			<a id="logo" href="/">Lucas Maués</a>
+			<button id="menu" role="button" aria-label="open navigation menu" accesskey="1">Menu</button>
 
-		<nav role="navigation">
-			<button id="close" role="button" aria-label="close navigation menu" accesskey="2">Close</button>
-			<ul>
-				<li><a href="#about" accesskey="a">About me</a></li>
-				<li><a href="#work" accesskey="p">Work &amp; projects</a></li>
-				<li><a href="#services" accesskey="s">What I can do for you</a></li>
-				<li><a href="#contact" accesskey="c">Get in touch</a></li>
-				<li><a href="https://medium.com/@lucasmaues" target="_blank" rel="noopener" accesskey="b">Visit my blog</a></li>
-			</ul>
-		</nav>
+			<nav role="navigation">
+				<button id="close" role="button" aria-label="close navigation menu" accesskey="2">Close</button>
+				<ul>
+					<li><a href="#about" accesskey="1">About</a></li>
+					<li><a href="#services" accesskey="2">Services</a></li>
+					<li><a href="#work" accesskey="3">Work</a></li>
+					<li><a href="#contact" accesskey="4">Contact</a></li>
+					<li><a href="https://medium.com/@lucasmaues" target="_blank" rel="noopener" accesskey="5">Blog</a></li>
+				</ul>
+			</nav>
+		</div>
 
 	</header>
 
-	<main role="main">
+	<main role="main" class="page">
 
 		<section id="about" class="full-screen">
 
 			<div class="screen-container">
 
-				<div id="photo"></div>
+				<div class="left text">
 
-				<div class="left title">
-					<h1>Lucas Maués</h1>
-					<p>Web Developer &amp; Designer</p>
-					<div>
-						<a href="#info" class="button">View my portfolio</a>
-					</div>
+					<div id="photo"></div>
+
+					<h1>I’m Lucas Maués, a Web Developer &amp; Designer from Brazil.</h1>
+
+					<p>Working as freelance over last years, I've been had the privilege of help small and medium organizations have a solid digital presence for establish their business. With multidisciplinary skills in design and development, I create sites, apps and immersive Web experiences that empower people and brands to do more online.</p> <!-- I'm also founder of <a href="https://inblug.com">Inblug</a>, an independent ethical data-driven digital agency. -->
+
+					<a href="#contact" class="button">Let’s talk</a>
+
 				</div>
 
 			</div>
 
 		</section>
 
-		<section id="info" class="auto-screen">
+		<section id="services" class="auto-screen">
 
 			<div class="screen-container">
 
-				<div class="left text">
+				<div class="left">
 
-					<p>Hello. I'm Lucas Maués, a web developer and designer based in Belém, Brazil.</p>
+					<h2>Services</h2>
+					<p>Solving problems with simplicity.</p>
 
-		        	<p>Working as freelancer or consultant on last years, I had the privilege of helping small and medium organizations to have online presence and consolidate their digital business.</p>
-						
-					<p>More than create sites or apps, I believe in immersive web experiences that empower people and brands. With a multidisciplinary mindset in design and development, I like to solve real problems with code and creativity.</p>
-						
-					<p>If you want to discuss an idea or drink a coffee, feel free to say hello, at:</p>
-					
-					<!-- Recently, I started <a href="https://inblug.com" target="_blank" rel="noopener">Inblug</a>, an independent ethical data-driven digital agency. -->
+					<div class="card">
 
-					<div class="icons">
+						<div>
+							<figure class="icon-design"></figure>
+							<h3>User Experience &amp; Interface Design</h3>
+							<p>Intuitve and functional User-centered Experiences (UX) across multiple devices. Creation of cohesive Wireframes, Prototypes and Flows, using Information Architecture and Interaction Design, to deliver responsive Interfaces (UI) with Accessibility (WAI-ARIA), for everyone be able to access. Continuous product improvement with Usability Tests and User Research, for discovery Persona, reduce error ratio and retain more customers.</p>
+						</div>
 
-						<a href="https://twitter.com/lucasmauess" class="twitter" target="_blank" rel="noopener" title="Twitter">Twitter</a>
-						<a href="https://instagram.com/lucasmauess" class="instagram" target="_blank" rel="noopener" title="Instagram">Instagram</a>
-						<a href="https://github.com/lucasmaues" class="github" target="_blank" rel="noopener" title="GitHub">GitHub</a>
-						<a href="https://medium.com/@lucasmaues" class="medium" target="_blank" rel="noopener" title="Medium">Medium</a>
-						<a href="https://dribbble.com/lucasm" class="dribbble" target="_blank" rel="noopener" title="Dribbble">Dribbble</a>
-						<a href="https://codepen.io/lucasm" class="codepen" target="_blank" rel="noopener" title="CodePen">CodePen</a>
-						<a href="https://linkedin.com/in/lucasmaues" class="linkedin" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
-						<a href="https://pinterest.com/lucasmauess" class="pinterest" target="_blank" rel="noopener" title="Pinterest">Pinterest</a>
-						<a href="https://youtube.com/lucasmauess" class="youtube" target="_blank" rel="noopener" title="YouTube">YouTube</a>
-						<a href="https://open.spotify.com/user/lucasmauess" class="spotify" target="_blank" rel="noopener" title="Spotify">Spotify</a>
-						<a href="https://last.fm/user/lucasmauess" class="lastfm" target="_blank" rel="noopener" title="Last.fm">Last.fm</a>
-						<a href="https://tvtime.com/user/4994111/profile" class="tvtime" target="_blank" rel="noopener" title="TV Time">TV Time</a>
-						<a href="https://live.xbox.com/profile?gamertag=lucasmauess" class="xbox" target="_blank" rel="noopener" title="Xbox Live">Xbox Live</a>
-						<a href="https://snapchat.com/add/lucasmauess" class="snapchat" target="_blank" rel="noopener" title="Snapchat">Snapchat</a>
-						<a href="skype://lucasmauess" class="skype" title="Skype">Skype</a>
-						<a href="https://m.me/lucasmauess" class="messenger" target="_blank" rel="noopener" title="Messenger">Messenger</a>
-						<a href="https://t.me/lucasmaues" class="telegram" target="_blank" rel="noopener" title="Telegram">Telegram</a>
+						<div>
+							<figure class="icon-dev"></figure>
+							<h3>Full-Stack Web Development</h3>
+							<p>Websites with or without Content Management Systems (WordPress, Joomla), Progressive Web Apps (PWA), E-commerce platforms and Web VR/AR experiences. Using Front-end (HTML, CSS, JavaScript) and Back-end (Node, PHP, Ruby) languages and frameworks with Database (MySQL, MongoDB), Version Control (Git), API integration and Agile methods to build smart solutions, with automation tools, standardized code and optimizated Performance for fast loading.</p>
+						</div>
 
-						<!-- <a href="https://behance.net/lucasmaues" class="behance" target="_blank">Behance</a>
-						<a href="http://slideshare.net/lucasmauess" class="slideshare" target="_blank">SlideShare</a>
-						<a href="https://soundcloud.com/lucasmaues" class="soundcloud" target="_blank">SoundCloud</a>
-						<a href="https://www.pscp.tv/lucasmaues" class="periscope" target="_blank">Periscope</a>
-						<a href="https://google.com/+lucasmauess" class="googleplus" target="_blank">Google+</a>
-						<a href="https://ello.co/lucasmaues" class="ello" target="_blank">Ello</a>
-						<a href="http://stumbleupon.com/stumbler/lucasmauess" class="stumbleupon" target="_blank">StumbleUpon</a>
-						<a href="https://reddit.com/user/lucasmaues" class="reddit" target="_blank">reddit</a>
-						<a href="https://foursquare.com/user/82595040" class="foursquare" target="_blank">Foursquare</a>
-						<a href="https://vimeo.com/lucasm" class="vimeo" target="_blank">Vimeo</a>
-						<a href="https://twitch.tv/lucasmauess/profile" class="twitch" target="_blank">Twitch</a>
-						<a href="https://flickr.com/lucasmauess" class="flickr" target="_blank">Flickr</a>
-						<a href="http://lattes.cnpq.br/2171245568210053" class="lattes" target="_blank">Lattes</a>
-						<a href="https://about.me/lucasm" class="aboutme" target="_blank">about.me</a> -->
+						<div>
+							<figure class="icon-data"></figure>
+							<h3>Inbound Marketing &amp; Data Insights</h3>
+							<p>Ads are annoying. Engage people and move them to branded actions using an ethical data-driven approach. Understand the needs of your audience with Market Research and formulate a relevant Content Strategy based in good practices in Search Engine Optimization (SEO), Social Media Marketing (SMM), Email Marketing and the combinated power of Open Data with Web Analytics to predict trends, increase conversions and get better results.</p>
+						</div>
 
 					</div>
 
@@ -165,115 +153,98 @@
 
 		</section>
 
-		<section id="work" class="auto-screen page">
+		<section id="work" class="auto-screen">
 
 			<div class="screen-container">
 
 			<div class="left">
 
-				<h2>Selected <b>work</b></h2>
-				<hr>
+				<h2>Work</h2>
+				<p>Made with love.</p>
 
-				<div class="container">
-
-					<div class="tile">
-						<figure style="background-image: url('images/work/findto.jpg');"></figure>
-						<a href="#work" class="color-blue">
-						    <div>
-						        <h3>Findto</h3>
-						        <p>Search tool with multiple engines and filters.</p>
-						        <span>Progressive Web App</span>
-						    </div>
+				<div class="box">
+						
+						<a href="#findto">
+							<div>
+								<figure style="background-image: url('images/work/findto.jpg');"></figure>
+								<h3>Findto</h3>
+								<p>Progressive Web App for an open source web search tool with multiple engines, content filters and privacy options.</p>
+								<span>Front-End Development / UI Design</span>
+							</div>
 						</a>
-					</div>
-
-					<div class="tile">
-						<figure style="background-image: url('images/work/vydeon.jpg');"></figure>
-						<a href="#work" class="color-blue">
-						    <div>
-						        <h3>Vydeon</h3>
-						        <p>Videos from channels and streaming services like stories.</p>
-						        <span>Progressive Web App</span>
-						    </div>
+	
+						<a href="#headlyne">
+							<div>
+								<figure style="background-image: url('images/work/headlyne.jpg');"></figure>
+								<h3>Headlyne</h3>
+								<p>Web App for an open source news reader with headlines from mainstream and alternative media and fact-checking.</p>
+								<span>Front-End Development / UI Design</span>
+							</div>
 						</a>
-					</div>
 
-					<div class="tile">
-						<figure style="background-image: url('images/work/headlyne.jpg');"></figure>
-						<a href="#work" class="color-blue">
-						    <div>
-						        <h3>Headlyne</h3>
-						        <p>News headlines with alternative media and fact check.</p>
-						        <span>Progressive Web App</span>
-						    </div>
+						<a href="#vydeon">
+							<div>
+								<figure style="background-image: url('images/work/vydeon.jpg');"></figure>
+								<h3>Vydeon</h3>
+								<p>WebVR immersive experiment with a hub of videos from popular channels, public social stories and shortcuts to streaming services.</p>
+								<span></span>
+							</div>
 						</a>
-					</div>
-
-					<div class="tile">
-						<figure style="background-image: url('images/work/educolab.jpg');"></figure>
-						<a href="#work" class="color-blue">
-						    <div>
-						        <h3>Educolab</h3>
-						        <p>Collaborative guides directory to learn online.</p>
-						        <span>Progressive Web App</span>
-						    </div>
+		
+						<a href="#educolab">
+							<div>
+								<figure style="background-image: url('images/work/educolab.jpg');"></figure>
+								<h3>Educolab</h3>
+								<p>Web App, destinated to internet beginners, with collaborative guides of how and where start learning online.</p>
+							</div>
 						</a>
-					</div>
 
-					<div class="tile">
-						<figure style="background-image: url('images/work/inblug.jpg');"></figure>
-						<a href="#work" class="color-blue">
-						    <div>
-						        <h3>Inblug</h3>
-						        <p>Independent ethical data-driven digital agency.</p>
-						        <span>Website / UI-UX Design</span>
-						    </div>
+						<a href="#cacba">
+							<div>
+								<figure style="background-image: url('images/work/cacba.jpg');"></figure>
+								<h3>CACBA</h3>
+								<p>Hacked website recovered, redesigned and optimized for a non-governmental organization that working with cultural actions in communities at Amazon region.</p>
+								<span>Full-Stack Development / UI Design / SEO</span>
+							</div>
 						</a>
-					</div>
 
-					<div class="tile">
-					    <figure style="background-image: url('images/work/cacba.jpg');"></figure>
-					    <a href="#work" class="color-blue">
-					        <div>
-					            <h3>CACBA</h3>
-					            <p>Non-profit organization of art, culture and popular education. </p>
-								<span>Website / UI Design / Security</span>
-					        </div>
-					    </a>
-					</div>
-
-					<div class="tile">
-						<figure style="background-image: url('images/work/ufpa.jpg');"></figure>
-						<a href="#work" class="color-blue">
-						    <div>
-						        <h3>UFPA</h3>
-						        <p>University web radio.</p>
-						        <span>Multiple Websites / UI Design / Back-End</span>
-						    </div>
+						<a href="#nufen">
+							<div>
+								<figure style="background-image: url('images/work/nufen.jpg');"></figure>
+								<h3>Nufen</h3>
+								<p>Website, with eCommerce capabilities, for a psychological support online service of a phenomenology research group.</p>
+								<span>Full-Stack Development / UI Design</span>
+							</div>
 						</a>
-					</div>
 
-					<div class="tile">
-						<figure style="background-image: url('images/work/nufen.jpg');"></figure>
-						<a href="#work" class="color-blue">
-						    <div>
-						        <h3>Nufen</h3>
-						        <p>Psychological health virtual service.</p>
-						        <span>eCommerce Website / UX Design / Back-End</span>
-						    </div>
+						<a href="#ufpa">
+							<div>
+								<figure style="background-image: url('images/work/ufpa.jpg');"></figure>
+								<h3>UFPA</h3>
+								<p>Responsive website, hotsites and webdocumentary for the radio of largest Brazilian public federal university in Amazon.</p>
+								<span>Full-Stack Development / UI Design</span>
+							</div>
 						</a>
+
+						<a href="#inblug">
+							<div>
+								<figure style="background-image: url('images/work/inblug.jpg');"></figure>
+								<h3>Inblug</h3>
+								<p>[Working on] Offline-capable website for an independent digital agency specialized in data ethics and emerging web technologies.</p>
+								<span>Full-Stack Development / UX Design</span>
+							</div>
+						</a>
+	
+						<!-- <a href="#work">
+							<figure style="background-image: url('images/work/na-cuia.jpg');"></figure>
+							<h3>Na Cuia</h3>
+							<p>Digital magazine of cultural journalism.</p>
+						</a> -->
+	
 					</div>
-
-					<!-- <a href="#projects">
-						<figure style="background-image: url('images/work/na-cuia.jpg');"></figure>
-						<h3>Na Cuia</h3>
-						<p>Digital magazine of cultural journalism.</p>
-					</a> -->
-
-            	</div>
-
+				
 				<!-- <div> 
-					<a href="work" class="button">View all Work</a>
+					<a href="#work" class="button">View all projects</a>
 				</div> -->
 
 			</div>
@@ -282,81 +253,70 @@
 
 		</section>
 
-		<section id="services" class="auto-screen page">
+
+		<section id="contact" class="auto-screen">
 
 			<div class="screen-container">
 
-			<div class="left">
+				<div class="left">
 
-				<h2>Technical <b>skills</b></h2>
+					<h2>Contact</h2>
+					<p>Get in touch to discuss your project.</p>
 
-				<hr>
+					<div class="actions">
+						<a href="mailto:hello@lucasmaues.com">hello@lucasmaues.com</a>
+						<a href="tel:+5591984968007">+55 (91) 98496-8007</a>
+						<a href="https://goo.gl/maps/8iKwDBGk7XG2" target="_blank" rel="noopener">Belém, PA - Brazil</a>
+					</div>
 
-				<div class="card">
+					<form role="form" method="POST" action="//formspree.io/hello@lucasmaues.com">
+						<label for="f1">Name</label>
+						<input type="text" name="name" placeholder="Name" id="f1" required/>
+						<label for="f2">Email</label>
+						<input type="email" name="_replyto" placeholder="Email" id="f2" required/>
+						<!-- <input type="tel" name="phone" placeholder="Phone number" pattern="[0-9]+$" title="Only numbers!" /> -->
+						<!-- <input type="url" id="url" name="website" placeholder="Website or app link" /> -->
+						<input type="hidden" name="_subject" value="New message from LucasMaues.com"/>
+						<label for="f3">Message</label>
+						<textarea name="text" placeholder="Type your message" id="f3" required></textarea>
+						<input type="submit" value="Send message" class="button" />
+						<input type="hidden" name="_next" value="thanks" />
+					</form>
 
-					<a href="#contact">
-						<figure class="icon-devices"></figure>
-						<div>
-							<h3>User Experience / Interface Design</h3>
-							<p>User-centered responsive experience across-devices: Information Architecture, UI Prototyping, Interactions, Usability, Accessibility (WAI-ARIA) and UX Research.</li>
-							</p>
-						</div>
-					</a>
+					<div class="icons">
 
-					<a href="#contact">
-						<figure class="icon-code"></figure>
-						<div>
-							<h3>Web App / Site Development</h3>
-							<p>Standards-compliant code that run anywhere: Front-end (HTML, CSS, JavaScript), Back-end (Node.js, PHP, Ruby), Progressive Web App (PWA), WebVR, e-Commerce, CMS (WordPress, Joomla), Database (MySQL, MongoDB), VCS (Git), API integrations and Performance.</p>
-						</div>
-					</a>
-
-					<a href="#contact">
-						<figure class="icon-data"></figure>
-						<div>
-							<h3>Inbound Marketing / Data Analytics</h3>
-							<p>Data-driven approach to engage users and move them to action: Market Research, Content Strategy, Search Engine Optimization (SEO), Social Media Marketing (SMM), Email Marketing, Web Analytics and Data Insights.</p>
-						</div>
-					</a>
+						<p>Find me elsewhere on the web:</p>
+						
+						<a href="https://twitter.com/lucasmauess" class="twitter" target="_blank" rel="noopener" title="Twitter">Twitter</a>
+						<a href="https://instagram.com/lucasmauess" class="instagram" target="_blank" rel="noopener" title="Instagram">Instagram</a>
+						<a href="https://github.com/lucasmaues" class="github" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+						<a href="https://medium.com/@lucasmaues" class="medium" target="_blank" rel="noopener" title="Medium">Medium</a>
+						<a href="https://dribbble.com/lucasm" class="dribbble" target="_blank" rel="noopener" title="Dribbble">Dribbble</a>
+						<a href="https://linkedin.com/in/lucasmaues" class="linkedin" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+						<a href="https://codepen.io/lucasm" class="codepen" target="_blank" rel="noopener" title="CodePen">CodePen</a>
+						<a href="https://pinterest.com/lucasmauess" class="pinterest" target="_blank" rel="noopener" title="Pinterest">Pinterest</a>
+						<a href="https://facebook.com/lucasmauess" class="facebook" target="_blank" rel="noopener" title="Facebook">Facebook</a>
+						<a href="https://youtube.com/lucasmauess" class="youtube" target="_blank" rel="noopener" title="YouTube">YouTube</a>
+						<a href="https://tvtime.com/user/4994111/profile" class="tvtime" target="_blank" rel="noopener" title="TV Time">TV Time</a>
+						<a href="https://open.spotify.com/user/lucasmauess" class="spotify" target="_blank" rel="noopener" title="Spotify">Spotify</a>
+						<a href="https://last.fm/user/lucasmauess" class="lastfm" target="_blank" rel="noopener" title="Last.fm">Last.fm</a>
+						<a href="https://live.xbox.com/profile?gamertag=lucasmauess" class="xbox" target="_blank" rel="noopener" title="Xbox Live">Xbox Live</a>
+						<a href="https://snapchat.com/add/lucasmauess" class="snapchat" target="_blank" rel="noopener" title="Snapchat">Snapchat</a>
+						<a href="https://m.me/lucasmauess" class="messenger" target="_blank" rel="noopener" title="Messenger">Messenger</a>
+						<a href="skype://lucasmauess" class="skype" title="Skype">Skype</a>
+						<a href="https://t.me/lucasmaues" class="telegram" target="_blank" rel="noopener" title="Telegram">Telegram</a>
+						<!-- <a href="https://behance.net/lucasmaues" class="behance" target="_blank">Behance</a>
+						<a href="https://soundcloud.com/lucasmaues" class="soundcloud" target="_blank">SoundCloud</a>
+						<a href="https://twitch.tv/lucasmauess" class="twitch" target="_blank">Twitch</a>
+						<a href="https://pscp.tv/lucasmaues" class="periscope" target="_blank">Periscope</a>
+						<a href="https://reddit.com/user/lucasmaues" class="reddit" target="_blank">reddit</a>
+						<a href="https://google.com/+lucasmauess" class="googleplus" target="_blank">Google+</a>
+						<a href="https://ello.co/lucasmaues" class="ello" target="_blank">Ello</a>
+						<a href="https://vimeo.com/lucasm" class="vimeo" target="_blank">Vimeo</a>
+						<a href="https://about.me/lucasm" class="aboutme" target="_blank">about.me</a> -->
+					</div>
 
 				</div>
-
-			</div>
-
-			</div>
-
-		</section>
-
-		<section id="contact" class="auto-screen page">
-
-			<div class="screen-container">
-
-			<div class="left">
-
-				<h2><b>Let’s talk</b> about your project</h2>
-				<hr>
-
-				<div class="contact">
-	                <a href="mailto:hello@lucasmaues.com" class="icon-email">hello@lucasmaues.com</a>
-	                <a href="tel:+5591984968007" class="icon-phone">+55 (91) 984 968 007</a>
-	                <a href="https://goo.gl/maps/8iKwDBGk7XG2" target="_blank" rel="noopener" class="icon-local">Belém, PA - Brazil</a>
-	        	</div>
-
-		        <form role="form" method="POST" action="//formspree.io/hello@lucasmaues.com">
-		        	<label for="f1">Name</label>
-	                <input type="text" name="name" placeholder="Name" id="f1" required/>
-	                <label for="f2">Email</label>
-	                <input type="email" name="_replyto" placeholder="Email" id="f2" required/>
-	                <!-- <input type="tel" name="phone" placeholder="Phone number" pattern="[0-9]+$" title="Only numbers!" /> -->
-	                <!-- <input type="url" id="url" name="website" placeholder="Website or app link" /> -->
-	                <input type="hidden" name="_subject" value="lucasmaues.com - New Request"/>
-	                <label for="f3">Message</label>
-	                <textarea name="text" placeholder="Describe your project" id="f3" required></textarea>
-	                <input type="submit" value="Send message" />
-	                <input type="hidden" name="_next" value="thanks" />
-	            </form>
-
-	       	</div>
 
 			</div>
 			
