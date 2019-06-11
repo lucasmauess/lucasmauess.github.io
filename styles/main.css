@@ -3,15 +3,15 @@
 @font-face{
   font-family: 'SpaceGrotesk Bold';
   src: url('../fonts/SpaceGrotesk-Bold.woff') format('woff'),
-        url('../fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
-        url('../fonts/SpaceGrotesk-Bold.otf') format('opentype');
+      url('../fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Bold.otf') format('opentype');
   font-weight: 700;
 }
 @font-face{
   font-family: 'SpaceGrotesk Regular';
   src: url('../fonts/SpaceGrotesk-Regular.woff') format('woff'),
-        url('../fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
-        url('../fonts/SpaceGrotesk-Regular.otf') format('opentype');
+      url('../fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Regular.otf') format('opentype');
   font-weight: 400;
 }
 

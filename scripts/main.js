@@ -1,28 +1,24 @@
 // register service worker
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-      // registration successful
-      console.log('Service Worker registered, with scope: ', registration.scope);
+      // successful
+      console.log('Service Worker registered:', registration.scope);
     }).catch(function(err) {
-      // registration failed
-      console.log('Service Worker registration failed, error: ', err);
+      // failed
+      console.log('Service Worker registration failed:', err);
     });
   });
 }
 
 // define header for headroom.js
-
 // var header = document.querySelector("header");
-
 // new Headroom(header, {
 //   tolerance: 0,
 //   offset : 10,
 // }).init();
 
 // navigation menu
-
 (function() {
   $(".menu").on("click", function() {
     $(this).toggleClass('open');
@@ -36,8 +32,7 @@ if ('serviceWorker' in navigator) {
   });
 }).call(this);
 
-// handle links started with '#' only
-
+// handle links started with '#'
 $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
     var id = $(this).attr('href');
@@ -54,13 +49,8 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     $('body, html').animate({scrollTop: pos});
 });
 
-// console signature
 
-console.log('\n%cMade with <3 by Lucas Maués', 'background:#000;color:#fff;padding:5px 10px;');
-
-
-// auto resize textarea
-
+// auto resize form textarea
 (function(){
 
 var textareas = document.querySelectorAll('.expanding'),
@@ -113,3 +103,7 @@ for (var i = 0; i < textareas.length; i++ ) {
 }
 
 })();
+
+
+// console signature
+console.log('\n%cMade w/ <3 by Lucas Maués', 'background:#000;color:#fff;padding:5px 10px;');
