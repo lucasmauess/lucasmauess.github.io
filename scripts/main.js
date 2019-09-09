@@ -106,4 +106,4 @@ for (var i = 0; i < textareas.length; i++ ) {
 
 
 // console signature
-console.log('\n%cMade w/ <3 by Lucas Maués', 'background:#000;color:#fff;padding:5px 10px;');
+console.log('\n%cMade with <3 by Lucas Menezes', 'background:#000;color:#fff;padding:5px 10px;');

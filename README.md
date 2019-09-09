@@ -1,10 +1,8 @@
-# [lucasmaues.com](https://lucasmaues.com/)
+# [lucasm.dev](https://lucasm.dev/)
 
-My personal website — a portfolio that work offline :)
+My personal website — a portfolio that works offline :)
 
 ## Licences
 
-* Content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-* Code is under [MIT License](https://mit-license.org/)
-
-© 2019 Lucas Maués.
+* All content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+* Source code is under [MIT License](https://mit-license.org/)

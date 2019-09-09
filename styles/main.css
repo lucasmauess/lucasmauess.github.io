@@ -340,15 +340,16 @@ article blockquote {
   float: left;
   margin: 1rem 0 0;
   padding: 0 1.5rem;
-  line-height: 46px;
-  color: #fff;
-  background: #000;
+  line-height: 44px;
+  color: #000;
+  background: #eee;
   border: none;
-  border-radius: 5rem;
+  border-radius: .5rem;
   cursor: pointer;
 }
 .button:hover, .button:focus {
   background: #000;
+  color: #fff;
 }
 
 /* Helpers */
@@ -493,12 +494,12 @@ article blockquote {
   margin: 0 0 1.5rem 0;
   width: 100%;
   height: auto;
-  background: transparent;
+  background: #eee;
   overflow: hidden;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
-  border: 3px solid #000;
-  /* border-radius: 1rem; */
+  border: 3px solid transparent;
+  border-radius: 1rem;
 }
 .cards a:hover, .cards a:focus {
   background: #000;
@@ -649,6 +650,9 @@ input[type="submit"]:active {
   height: 20px;
   margin: 1rem;
   font-size: 0;
+}
+.icons a:hover .svg, .icons a:focus .svg {
+  fill: #777;
 }
 
 /* colors */
@@ -804,10 +808,10 @@ section .container {
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   h2, article h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-bottom: 2.5rem;
   }
   h3, h4 {
