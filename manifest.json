@@ -1,7 +1,7 @@
 {
   "name": "Lucas Menezes",
   "short_name": "lucasm.dev",
-  "description": "Building sites & apps for humans.",
+  "description": "Building apps and immersive web experiences.",
   "icons": [
     {
       "src": "images/icons/icon-48x48.png",
@@ -33,7 +33,7 @@
       "type": "image/png"  
     }
   ],
-  "start_url": "index.html?utm_source=pwa",
+  "start_url": "/?utm_source=pwa",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#000"
