@@ -40,7 +40,7 @@ const Header = () => (
 			<nav>
 				<ul>
 					<li><Link href="/#about" accessKey="2"><a>About</a></Link></li>
-					<li><Link href="/#work" accessKey="3"><a>Work</a></Link></li>
+					<li><Link href="/#projects" accessKey="3"><a>Projects</a></Link></li>
 					<li><Link href="/#contact" accessKey="4"><a>Contact</a></Link></li>
 					{/* <li><a href="/blog" accessKey="5">Blog</a></li> */}
 				</ul>

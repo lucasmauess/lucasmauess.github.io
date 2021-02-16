@@ -245,6 +245,7 @@ p, li, .button, input, textarea {
 }
 .special {
   max-width: 800px;
+  margin-top: 2rem;
 }
 .special h1 {
   padding: 1rem 0 3rem;
