@@ -17,10 +17,10 @@ if (typeof (document) !== "undefined") {
 
 export default function Thanks() {
   return (
-    <PageLayout title="Thank You – Lucas Menezes" description="Thanks page.">
+    <PageLayout title="Thank You — Lucas Menezes" description="Thanks page.">
 
  
-        <section class="fullscreen gray">
+        <section class="fullscreen bg-y">
             <div class="fullscreen-container">
 
                 <div class="container">

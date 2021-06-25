@@ -23,8 +23,8 @@ export default function Header() {
 
 				<nav className={isActive ? null : "open"}>
 					<ul>
+						<li><Link href="/#work" accessKey="3"><a onClick={handleToggle}>Work</a></Link></li>
 						<li><Link href="/#about" accessKey="2"><a onClick={handleToggle}>About</a></Link></li>
-						<li><Link href="/#projects" accessKey="3"><a onClick={handleToggle}>Projects</a></Link></li>
 						<li><Link href="/#contact" accessKey="4"><a onClick={handleToggle}>Contact</a></Link></li>
 						{/* <li><a href="/blog" accessKey="5">Blog</a></li> */}
 					</ul>
