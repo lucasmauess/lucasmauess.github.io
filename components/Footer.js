@@ -15,7 +15,7 @@ function getYear() {
 
       <div className="row align-center">
           <div className="justify-content-between horizontal">
-            <p> {getYear()} <Link href="/"><a>Lucas Menezes</a></Link>  all rights reserved.</p>
+            <p> {getYear()} <Link href="/"><a>Lucas Menezes</a></Link>  all rights reserved</p>
             <p><Link href="/privacy"><a accessKey="6">Privacy</a></Link></p>
           </div>
         </div>

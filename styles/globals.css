@@ -315,12 +315,12 @@ article blockquote {
   display: inline-block;
   float: none;
   margin: 1rem 0 0;
-  padding: 0 1.5rem;
-  line-height: 44px;
+  padding: 0 2rem;
+  line-height: 46px;
   color: var(--cor-preto);
   background: var(--cor-y);
   border: none;
-  border-radius: var(--radius);
+  border-radius: 50rem;
   cursor: pointer;
 }
 .button:hover, .button:focus {
@@ -407,15 +407,17 @@ article blockquote {
   width: auto;
   padding: 0;
   line-height: 1;
-  margin: 0 1.25rem 1.25rem 0;
+  margin: 0 1.75rem 1.75rem 0;
   font-size: 0;
   background: transparent;
+  transition: transform 0s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
 .icons a:hover, .icons a:focus {
   background: transparent;
+  transform: scale(1.075);
 }
 .icons svg {
-  width: 18px;
+  width: 22px;
 }
 
 .block {
@@ -791,16 +793,13 @@ section .container {
   }
 
   .home {
-    padding: 6rem 4rem 4rem;
+    padding: 0 4rem 4rem;
   }
   .home h2 {
     font-size: 3.4rem;
   }
   .home .button {
     margin-top: 2rem;
-  }
-  .description {
-    font-size: 1.4rem;
   }
   #profile {
     margin: 0 0 0 3rem;
@@ -817,10 +816,7 @@ section .container {
     margin: 1rem 0;
   }
   .icons a {
-    margin: 0 2.25rem 0 0;
-  }
-  .icons svg {
-    width: 22px;
+    margin: 0 2rem 0 0;
   }
 
   h1, article h1 {
@@ -832,7 +828,7 @@ section .container {
   h3, h4, article h2 {
     font-size: 1.6rem;
   }
-  .special p, .card p, article p {
+  .description, .special p, .card p, article p {
     font-size: 1.2rem;
   }
   p, li, nav a, .button, input, textarea {

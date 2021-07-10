@@ -16,7 +16,7 @@ export default function Home() {
                     </figure>
 
                     <h2>Lucas Menezes — a Software Engineer based in Brazil.</h2>
-                    <p className="description">I build websites and apps.</p>
+                    <p className="description">I build websites, apps and open source.</p>
 
                     <div className="icons">
                         <a href="https://twitter.com/lucasmezs" target="_blank" rel="noopener" title="Twitter">
@@ -39,6 +39,10 @@ export default function Home() {
                         </a>
                         <a href="https://dribbble.com/lucasm" target="_blank" rel="noopener" title="Dribbble">
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path className="svg" d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>Dribbble
+                        </a>
+
+                        <a href="https://patreon.com/lucasm" target="_blank" rel="noopener" title="Patreon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle className="svg" cx="15.34" cy="9.11" r="8.66"/><rect className="svg" y="0.45" width="4.23" height="23.1"/></svg>Patreon
                         </a>
                     </div>
 
@@ -73,24 +77,23 @@ export default function Home() {
                             <p>Open source Web search app with multiple engines, sources and privacy tools.</p>
                         </a>
 
-                        <a href="#" className="card">
-                            <figure>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path className="svg" d="M38,0H10.05A10.05,10.05,0,0,0,0,10.05V38A10.05,10.05,0,0,0,10.05,48H38A10.05,10.05,0,0,0,48,38V10.05A10.05,10.05,0,0,0,38,0ZM13.85,29.43H11.08V21.07H7V18.51H17.94v2.56H13.86Zm14.09-1.95a5.79,5.79,0,0,1-4.43,1.9h-.06a5.69,5.69,0,0,1-3.94-1.52,5.2,5.2,0,0,1-1.63-3.78v0a5.27,5.27,0,0,1,1.52-3.83,5.69,5.69,0,0,1,4.08-1.61,6.1,6.1,0,0,1,3.23.77l.2.12-1.57,2.13-.07-.05a3.34,3.34,0,0,0-1.77-.51,2.72,2.72,0,0,0-2,.86,2.92,2.92,0,0,0-.81,2A3,3,0,0,0,21.51,26a2.72,2.72,0,0,0,2,.84,3.69,3.69,0,0,0,2.59-1.14l.16-.15,1.8,1.72ZM25,24a1.42,1.42,0,1,1-1.41-1.42A1.41,1.41,0,0,1,25,24Zm16,5.44H38V23.86l-2.93,3.21H34.8L31.9,23.9v5.53H29V18.51h2.39L35,22.81l3.63-4.3H41Z"/></svg>
-                                <h2>Tribunal de Contas dos Municípios do Pará</h2>
-                            </figure>
-                            
-                            <p>Data visualizations on the web, tax calc web app and public services website, with accessibility and intranet for the court of accounts.</p>
-                        </a>
-
                         <a href="https://headly.app" className="card" target="_blank">
                             <figure className="color-headlyne">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path className="svg" d="M157.9,47.37l4.67-42.1H17.74L.2,163.15c-1.94,17.44,10.63,31.58,28.07,31.58h134.3c11.63,0,22.1-9.42,23.39-21L200,47.37ZM116.28,141.8H95.17V111.22H65V141.8H43.74V59.21H65V91.09H95.17V59.21h21.11Zm49.8,21.35a12.06,12.06,0,0,1-11.69,10.53A9.24,9.24,0,0,1,145,163.15l10.53-94.73h21.05Z"/></svg>
                                 <h2>Headly</h2>
                             </figure>
                             
-                            <p>Internationalized news reader app with headlines from trusted media and fact-checking.</p>
+                            <p>Internationalized news reader app with headlines and fact-checking from trusted media.</p>
                         </a>
 
+                        <a href="#" className="card">
+                            <figure>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path className="svg" d="M38,0H10.05A10.05,10.05,0,0,0,0,10.05V38A10.05,10.05,0,0,0,10.05,48H38A10.05,10.05,0,0,0,48,38V10.05A10.05,10.05,0,0,0,38,0ZM13.85,29.43H11.08V21.07H7V18.51H17.94v2.56H13.86Zm14.09-1.95a5.79,5.79,0,0,1-4.43,1.9h-.06a5.69,5.69,0,0,1-3.94-1.52,5.2,5.2,0,0,1-1.63-3.78v0a5.27,5.27,0,0,1,1.52-3.83,5.69,5.69,0,0,1,4.08-1.61,6.1,6.1,0,0,1,3.23.77l.2.12-1.57,2.13-.07-.05a3.34,3.34,0,0,0-1.77-.51,2.72,2.72,0,0,0-2,.86,2.92,2.92,0,0,0-.81,2A3,3,0,0,0,21.51,26a2.72,2.72,0,0,0,2,.84,3.69,3.69,0,0,0,2.59-1.14l.16-.15,1.8,1.72ZM25,24a1.42,1.42,0,1,1-1.41-1.42A1.41,1.41,0,0,1,25,24Zm16,5.44H38V23.86l-2.93,3.21H34.8L31.9,23.9v5.53H29V18.51h2.39L35,22.81l3.63-4.3H41Z"/></svg>
+                                <h2>Tribunal de Contas dos Municípios do Pará</h2>
+                            </figure>
+                            
+                            <p>Data visualization with maps on the web, tax calc web app and public services website, with accessibility and intranet.</p>
+                        </a>
 
 
                         <a href="#" className="card">
@@ -98,7 +101,7 @@ export default function Home() {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path className="svg" d="M98,60a21.23,21.23,0,0,0-2-1c-7.43-3.26-14.83-6.57-22.31-9.72a6.62,6.62,0,0,1-3.95-4.56c-2.27-8.16-4.36-16.37-6.55-24.55C62.31,17,61.51,14,60.47,11c-0.81-2.34-2.22-3-4.41-2.57-6.75,1.4-13.51,2.79-20.26,4.22Q19.65,16.07,3.51,19.54c-2.84.6-4,2.5-3.3,5.31C3.77,38.49,7.3,52.14,10.92,65.77c0.94,3.54,2,7,5.53,9.15,7.58,4.73,15,9.75,22.47,14.62,2,1.29,4.07,2.36,6.8,2.13a6.93,6.93,0,0,0,3.35-1.09l48.48-24.1A3.89,3.89,0,0,0,100,63.14,3.33,3.33,0,0,0,98,60Zm-80,.4a1.71,1.71,0,0,1-2.27-1.2L7.58,28A1.83,1.83,0,0,1,9,25.75L54.46,15.65a2,2,0,0,1,2.37,1.42l6.84,24.77a2.1,2.1,0,0,1-1.28,2.48ZM63.81,79.45L58.06,76.6l12-5.69,5.74,2.36Z"></path></svg>
                                 <h2>Lutec Infomática</h2>
                             </figure>
-                            <p>Ecommerce website and SEO services for a home computing store and technical assistance.</p>
+                            <p>Ecommerce website and SEO services for a home computing store and assistance.</p>
                         </a>
 
                         {/* <a href="#" className="card">
@@ -180,16 +183,18 @@ export default function Home() {
                 
                 <div className="special">
 
-                    <h1>I <span>build</span> websites & apps for refined digital experiences.</h1>
+                    <h1>I <span>build</span> websites, apps and open source.</h1>
 
                     <div className="col">
                         <div className="col-left">
                             <p>I build front-end user interfaces for websites and apps, with strong focus on user experience, responsive design, accessibility, progressive enhancement and performance. I also do adjacent back-end databases and APIs integrations.</p>
 
-                            <p>I’ve been working as consultant for organizations and startups of all sizes, helping them to solve problems and establish their online presence with refined digital products.</p>
+                            <p>I’ve been working as consultant for organizations of all sizes, helping them to solve problems and establish their online presence with refined digital products.</p>
                         </div>
                         <div className="col-right">
-                            <p>JavaScript, TypeScript, HTML, CSS, Node.js, React, Next.js, REST APIs, SQL, PHP, WordPress, Git, AWS, Vercel and Microsoft Azure are being my main development stack.</p>
+                            <p>I’m also create and maintain <a href="https://patreon.com/lucasm" target="_blank" rel="noopener">open source projects</a> backed by the community.</p>
+
+                            <p>JavaScript, TypeScript, HTML, CSS, Node.js, React, Next.js, REST APIs, SQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are being my main development stack.</p>
                             
                             <p>Wanna work together? Feel free to contact me to check my availability and discuss your project.</p>
                         </div>
